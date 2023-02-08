@@ -82,6 +82,23 @@
 
 /**********852************/
 @media (max-width: 852px) {
+
+
+a:focus,
+a:visited,
+a:active,
+a:hover
+{
+  text-decoration: none;
+  color: var(--whiteish)!important;
+}
+a:hover
+{
+  /*color: var(--main)!important;*/
+  font-weight: bold;
+}
+
+
 nav .logo {
   left: 50vw;
   transform: translate(-55%);
