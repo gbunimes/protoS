@@ -8,17 +8,22 @@
 @import "./style/responsive.css";
 
 /***FONTS***/
-/*
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900");
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
-*/
+/*@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900");*/
 
 body,
 html {
+
+
+  /*Color Variables*/
+  --blackish: #0e0d0d;
+  --whiteish: #f9f7fd;
+  --main: #21759C;
+  --secondary:#e84e24;
+  --tertiary:#434341;
+
+
   /*General*/
-  font-family: "Poppins", serif, arial;
+  /*font-family: "Poppins", serif, arial;*/
   font-display: swap;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
@@ -27,28 +32,24 @@ html {
   height: 100% !important;
   min-height: 100vh;
   max-width: 100vw;
-  color: var(--whiteish);
+  /*color: var(--whiteish);*/
+  color: var(--main);
+  color : var(--blackish);
+
   width: 100%;
   height: 100vh;
-  background-color: var(--blackish);
-  background: url("./style/background.webp");
-  background-color: var(--blackish);
+  /*background: url("./style/background.webp"), var(--whiteish);*/
+  background-color: var(--main);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
-
-  /*Color Variables*/
-  --blackish: #0e0d0d;
-  --whiteish: #f9f7fd;
-  --main: #21759C;
-  --secondary:#e84e24;
-  --tertiary:#434341;
 }
+
 a,
 p {
   font-size: 18px;
-  color: var(--whiteish);
+  /*color: var(--blackish);*/
   transition: 0.3s;
   text-decoration: none;
 }

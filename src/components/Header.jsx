@@ -16,14 +16,10 @@ export default function Header(data) {
           <a href="/accueil">
             <img
               fetchpriority="high"
-              src={
-                data.data1.UimgLinks.IL0 +
-                data.data1.ressources.logo1 +
-                data.data1.UimgLinks.IL1B
-              }
+              src="/img/LogoS.webp"
               className=" logo img-responsive page-scroll authorLogo"
               href="#page-top"
-              alt={data.data1 ? data.data1.nom : "loading..."}
+              alt="Logo du Service Numérique d'Accompagnement Pédagogique"
             />{" "}
           </a>
         </div>

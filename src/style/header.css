@@ -10,15 +10,17 @@ nav {
   left: 0;
   right: 0;
   top: 0;
-  color: var(--whiteish);
-  height: 85px; /**/
-  padding: 40px;
+  /*color: var(--whiteish);*/
+  height: 95px;
+  /*padding: 40px;*/
+  padding: 20px;
   text-transform: uppercase;
   font-size: 15px;
   font-weight: 450;
-  background: var(--blackish);
+  background: var(--whiteish);
   z-index: 1000;
-  box-shadow: 0 -5px 30px 1px var(--blackish);
+  color: var(--main);
+  box-shadow: 0 -20px 50px 1px var(--main);
 }
 nav li a,
 nav li,
@@ -33,7 +35,7 @@ nav button p {
 nav a:hover,
 nav button p:hover,
 .thatULink:hover p {
-  color: var(--greenish);
+  color: var(--main);
   text-decoration: none;
 }
 
@@ -42,7 +44,7 @@ nav .logo {
   position: relative;
   float: left;
   margin: 11px 0 11px 0;
-  height: 59px;
+  height: 79px;  
 }
 
 /*Header menu*/
@@ -73,7 +75,7 @@ nav .logo {
 .menu-button::before,
 .menu-button::after {
   display: block;
-  background-color: var(--whiteish);
+  background-color: var(--main);
   position: absolute;
   height: 4px;
   width: 30px;
@@ -132,8 +134,8 @@ nav .logo {
     margin: 0;
     padding: 0.5em 0;
     width: 100%;
-    color: var(--whiteish);
-    background-color: var(--blackishBack);
+    color: var(--main);
+    /*background-color: var(--blackishBack);*/
   }
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
@@ -194,11 +196,11 @@ ul li:hover ul {
 .contactList .fa {
   font-size: 25px;
   text-decoration: none;
-  color: var(--whiteish);
+  color: var(--main);
 }
 .contactList a:hover,
 .contactMail p:hover {
-  color: var(--greenish);
+  color: var(--main);
   text-decoration: none;
 }
 .contactList .authorLogo {
