@@ -15,19 +15,16 @@ export default function App() {
     /*DOM*/
     return (
         <Router>
-        <div className="app">
-
-
-        
+        <div className="app">        
           {/*ROUTES*/}
           <Switch>
             {/*HOMEPAGE*/}
-            <Route exact path="/accueil">
+            <Route exact path="/SNAP">
               <Homepage data1={Data1}/>
             </Route>            
             {/*REDIRECT*/}
             <Route>
-              <Redirect to="/accueil" />
+              <Redirect to="/SNAP" />
             </Route>
           </Switch>
         </div>

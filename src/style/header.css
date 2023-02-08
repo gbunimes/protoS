@@ -10,33 +10,16 @@ nav {
   left: 0;
   right: 0;
   top: 0;
-  /*color: var(--whiteish);*/
   height: 95px;
-  /*padding: 40px;*/
-  padding: 20px;
+  padding: 15px;
+  /*padding: 20px;*/
   text-transform: uppercase;
-  font-size: 15px;
+  font-size: 10px;
   font-weight: 450;
   background: var(--whiteish);
   z-index: 1000;
   color: var(--main);
   box-shadow: 0 -20px 50px 1px var(--main);
-}
-nav li a,
-nav li,
-nav div {
-  font-size: 15px;
-}
-nav p,
-nav button p {
-  font-size: 15px;
-  margin: auto;
-}
-nav a:hover,
-nav button p:hover,
-.thatULink:hover p {
-  color: var(--main);
-  text-decoration: none;
 }
 
 /*Header Logo*/
@@ -107,13 +90,14 @@ nav .logo {
   }
   .menu {
     position: absolute;
-    top: 0;
+    top: 17px;
     margin-top: 78px;
     left: 0;
     flex-direction: column;
     width: 100%;
     justify-content: center;
     align-items: center;
+    background-color: var(--secondary);
   }
   #menu-toggle ~ .menu li {
     height: 0;
@@ -139,6 +123,9 @@ nav .logo {
   }
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
+  }
+  .menu a {
+    color: var(--whiteish);
   }
 }
 
@@ -175,41 +162,4 @@ ul li:hover ul {
 }
 .noClick {
   pointer-events: none;
-}
-.contactList {
-  display: flex;
-  float: right;
-}
-
-.contactList a,
-.contactList p,
-.contactList li {
-  font-size: 18px;
-  font-weight: 400;
-  text-decoration: none;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 5px 0 5px;
-}
-.contactList .fa {
-  font-size: 25px;
-  text-decoration: none;
-  color: var(--main);
-}
-.contactList a:hover,
-.contactMail p:hover {
-  color: var(--main);
-  text-decoration: none;
-}
-.contactList .authorLogo {
-  max-height: 40px;
-}
-.contactList.fb {
-  margin: none;
-}
-
-.contactMail {
-  float: left;
 }

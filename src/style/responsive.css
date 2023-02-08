@@ -41,7 +41,7 @@
 	nav li a,
 	nav li,
 	nav div {
-		font-size: 12px;
+		/*font-size: 12px;*/
 	}
 	.creator a::before {
 		color: white !important;
@@ -82,6 +82,10 @@
 
 /**********852************/
 @media (max-width: 852px) {
+nav .logo {
+  left: 50vw;
+  transform: translate(-55%);
+}
 	.pagination2 a,
 	.aAnim2 {
 		height: 20px !important;
@@ -266,8 +270,15 @@
 	}
 }
 
+
 /**********688************/
 @media (max-width: 688px) {
+
+nav .logo {
+  left: 0;
+  transform: unset;
+}
+
 	.introRightWrapper {
 		display: none !important;
 	}

@@ -17,7 +17,7 @@ export default function Header(data) {
             <img
               fetchpriority="high"
               src="/img/LogoS.webp"
-              className=" logo img-responsive page-scroll authorLogo"
+              className=" logo img-responsive page-scroll"
               href="#page-top"
               alt="Logo du Service Numérique d'Accompagnement Pédagogique"
             />{" "}
