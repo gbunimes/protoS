@@ -34,7 +34,7 @@ export default function Intro() {
               alt="Conception de ressources"
             />{" "}
             <p>
-              <strong>La conception de ressources.</strong>
+              <strong>La conception de ressources</strong>
             </p>
           </div>
           <p>
