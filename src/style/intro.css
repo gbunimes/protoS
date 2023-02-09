@@ -2,6 +2,8 @@
 #intro {
   display: flex;
   margin-top: 125px;
+  -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both 0.6s;
+  animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) both 0.6s;
 }
 
 .intro {
@@ -11,24 +13,28 @@
   background-color: var(--whiteish);
   display: flex;
   flex-direction: column;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px -5px var(--tertiary);
+  text-align: justify;
 }
 
-.over {
-  /*background-color: red;*/
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-content: center;
-}
-h1 {
-  text-align: center;
-  color: var(--main);
+#intro .logo {
+  max-width: 100%;
+  max-height: 200px;
+  margin: auto auto 35px auto;
+
+  -webkit-box-reflect: below -12px linear-gradient(transparent, transparent, #0004);
+  animation: anipers 15s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite
+    alternate both;
 }
 .under {
-  background-color: blue;
+  width: 70%;
+  margin: 20px auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
-.over img {
-  max-width: 100%;
-  margin: auto;
+.under p {
+  font-size: 20px;
 }

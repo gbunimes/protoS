@@ -91,6 +91,12 @@
 
 /**********852************/
 @media (max-width: 852px) {
+	.intro {
+		width: 85%;
+	}
+	nav h1 {
+		display: none;
+	}
 	a:focus,
 	a:visited,
 	a:active,
@@ -329,6 +335,10 @@
 
 /**********688************/
 @media (max-width: 688px) {
+	.intro {
+		width: 100%;
+		border-radius: unset;
+	}
 	nav .logo {
 		left: 0;
 		transform: unset;

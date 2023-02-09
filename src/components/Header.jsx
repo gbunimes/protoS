@@ -10,7 +10,7 @@ export default function Header(data) {
   return (
     <header id="header">
       <nav role="navigation" className="top-nav primary-navigation Hheader">
-        <div>
+        <div className="logoText">
           {/*Site Logo*/}
           <a href="/accueil">
             <img
@@ -21,6 +21,7 @@ export default function Header(data) {
               alt="Logo du Service Numérique d'Accompagnement Pédagogique"
             />{" "}
           </a>
+          <h1> Service Numérique d'Accompagnement Pédagogique</h1>
         </div>
 
         {/*Responsive Burger Menu*/}
@@ -33,7 +34,7 @@ export default function Header(data) {
         <ul className="menu">
           {/*1 - Accueil*/}
           <li>
-            <a href="#introSec" className="page-scroll">
+            <a href="#Accueil" className="page-scroll">
               Accueil
             </a>
           </li>

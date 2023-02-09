@@ -1,5 +1,25 @@
 /***HEADER***/
 
+/*NEW*/
+nav h1 {
+  text-align: center;
+  color: var(--);
+  font-size: 20px;
+  align-self: center;
+  padding-left: 10px;
+  width: 100%;
+  display: flex;
+  font-weight: 500;
+  flex-wrap: wrap;
+}
+
+.logoText {
+  display: flex;
+  flex-direction: row;
+}
+
+/*/////////////////////////////////////////*/
+
 /*Header Nav*/
 nav {
   display: flex;
@@ -20,6 +40,12 @@ nav {
   z-index: 1000;
   color: var(--main);
   box-shadow: 0 -20px 50px 1px var(--main);
+  /*
+  -webkit-animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+    both 0.2;
+  animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) both
+    0.2s;
+    */
 }
 
 /*Header Logo*/
@@ -27,7 +53,7 @@ nav .logo {
   position: relative;
   float: left;
   margin: 11px 0 11px 0;
-  height: 79px;  
+  height: 79px;
 }
 
 /*Header menu*/
