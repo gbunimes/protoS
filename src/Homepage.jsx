@@ -11,8 +11,8 @@ export default function Homepage(data) {
   return (
     <div>
       <div className="homepage">
-        <Header data1={data.data1}/>
-        <Intro data1={data.data1}/>
+        <Header data1={data.data1} />
+        <Intro data1={data.data1} />
         {/*<Footer data1={data.data1}/>*/}
       </div>
     </div>

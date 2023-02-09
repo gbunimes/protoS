@@ -12,22 +12,22 @@ import Homepage from "./Homepage";
 
 /***APP***/
 export default function App() {
-    /*DOM*/
-    return (
-        <Router>
-        <div className="app">        
-          {/*ROUTES*/}
-          <Switch>
-            {/*HOMEPAGE*/}
-            <Route exact path="/SNAP">
-              <Homepage data1={Data1}/>
-            </Route>            
-            {/*REDIRECT*/}
-            <Route>
-              <Redirect to="/SNAP" />
-            </Route>
-          </Switch>
-        </div>
-      </Router>
-    );
+  /*DOM*/
+  return (
+    <Router>
+      <div className="app">
+        {/*ROUTES*/}
+        <Switch>
+          {/*HOMEPAGE*/}
+          <Route exact path="/SNAP">
+            <Homepage data1={Data1} />
+          </Route>
+          {/*REDIRECT*/}
+          <Route>
+            <Redirect to="/SNAP" />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+  );
 }

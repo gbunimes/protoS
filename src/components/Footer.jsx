@@ -6,12 +6,10 @@
 
 /***COMPONENT***/
 export default function Footer(data) {
-
-    /*DOM*/
-    return (
-        <div>
-       <footer id="footer">        
-    <  /footer>
+  /*DOM*/
+  return (
+    <div>
+      <footer id="footer"></footer>
     </div>
-    );
+  );
 }

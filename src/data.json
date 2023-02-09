@@ -1,4 +1,5 @@
-{   "nom": "SNAP",
+{
+    "nom": "SNAP",
     "description": "Service Numérique d'Accompagnement Pédagogique",
     "mail": "cap@unimes.fr",
     "telExt": "04 66 36 46 28",
@@ -11,81 +12,76 @@
     "logoFB": "fa fa-facebook",
     "logoTW": "fa fa-twitter",
     "logoIG": "fa fa-instagram",
-"menu":
-{
-    "menu1": "Accueil",
-    "menu2": "L'équipe",
-    "menu5": "Contact"
-},
-"links":
-{
-    "menu1L": "/accueil",
-    "menu2L": "/équipe",
-    "menu3L": "/contact"
-},
-"team": [
-{
-    "name": "Xavier",
-    "name2": "Moulin",
-    "poste": "Chef de projet",
-    "pres": ""
-},
-{
-    "name": "Marine",
-    "name2": "Moreau",
-    "poste": "Chef de service",
-    "pres": ""
-},
-{
-    "name": "Tom",
-    "name2": "Servière",
-    "poste": "Ingénieur scénariste",
-    "pres": ""
-},
-{
-    "name": "Marina",
-    "name2": "O",
-    "poste": "Assistant ingénieure pédagogique",
-    "pres": ""
-},
-{
-    "name": "Coralie",
-    "name2": "Allanet",
-    "poste": "Assistant ingénieure pédagogique",
-    "pres": ""
-},
-{
-    "name": "Gillian",
-    "name2": "Brousse",
-    "poste": "UX/UI designer",
-    "pres": ""
-}
-],
-"Intro":
-{
-    "titre": "Bienvenue sur la page du Service Numérique d'Accompagnement Pédagogique",
-    "P1": "",
-    "P2": "",
-    "P3": "",
-    "P4": "",
-    "P5": ""
-},
-"Membres":
-{
-    "titre": "Notre équipe",
-    "P1": "",
-    "P2": "",
-    "P3": "",
-    "P4": "",
-    "P5": ""
-},
-"contact":
-{
-    "titre": "Nous contacter",
-    "P1": "",
-    "P2": "",
-    "P3": "",
-    "P4": "",
-    "P5": ""
-}
+    "menu": {
+        "menu1": "Accueil",
+        "menu2": "L'équipe",
+        "menu5": "Contact"
+    },
+    "links": {
+        "menu1L": "/accueil",
+        "menu2L": "/équipe",
+        "menu3L": "/contact"
+    },
+    "team": [
+        {
+            "name": "Xavier",
+            "name2": "Moulin",
+            "poste": "Chef de projet",
+            "pres": ""
+        },
+        {
+            "name": "Marine",
+            "name2": "Moreau",
+            "poste": "Chef de service",
+            "pres": ""
+        },
+        {
+            "name": "Tom",
+            "name2": "Servière",
+            "poste": "Ingénieur scénariste",
+            "pres": ""
+        },
+        {
+            "name": "Marina",
+            "name2": "O",
+            "poste": "Assistant ingénieure pédagogique",
+            "pres": ""
+        },
+        {
+            "name": "Coralie",
+            "name2": "Allanet",
+            "poste": "Assistant ingénieure pédagogique",
+            "pres": ""
+        },
+        {
+            "name": "Gillian",
+            "name2": "Brousse",
+            "poste": "UX/UI designer",
+            "pres": ""
+        }
+    ],
+    "Intro": {
+        "titre": "Bienvenue sur la page du Service Numérique d'Accompagnement Pédagogique",
+        "P1": "",
+        "P2": "",
+        "P3": "",
+        "P4": "",
+        "P5": ""
+    },
+    "Membres": {
+        "titre": "Notre équipe",
+        "P1": "",
+        "P2": "",
+        "P3": "",
+        "P4": "",
+        "P5": ""
+    },
+    "contact": {
+        "titre": "Nous contacter",
+        "P1": "",
+        "P2": "",
+        "P3": "",
+        "P4": "",
+        "P5": ""
+    }
 }
