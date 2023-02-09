@@ -22,44 +22,6 @@
         "menu2L": "/équipe",
         "menu3L": "/contact"
     },
-    "team": [
-        {
-            "name": "Xavier",
-            "name2": "Moulin",
-            "poste": "Chef de projet",
-            "pres": ""
-        },
-        {
-            "name": "Marine",
-            "name2": "Moreau",
-            "poste": "Chef de service",
-            "pres": ""
-        },
-        {
-            "name": "Tom",
-            "name2": "Servière",
-            "poste": "Ingénieur scénariste",
-            "pres": ""
-        },
-        {
-            "name": "Marina",
-            "name2": "O",
-            "poste": "Assistant ingénieure pédagogique",
-            "pres": ""
-        },
-        {
-            "name": "Coralie",
-            "name2": "Allanet",
-            "poste": "Assistant ingénieure pédagogique",
-            "pres": ""
-        },
-        {
-            "name": "Gillian",
-            "name2": "Brousse",
-            "poste": "UX/UI designer",
-            "pres": ""
-        }
-    ],
     "Intro": {
         "titre": "Bienvenue sur la page du Service Numérique d'Accompagnement Pédagogique",
         "P1": "",

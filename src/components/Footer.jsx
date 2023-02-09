@@ -5,7 +5,7 @@
 /***COMPONENTS***/
 
 /***COMPONENT***/
-export default function Footer(data) {
+export default function Footer() {
   /*DOM*/
   return (
     <div>

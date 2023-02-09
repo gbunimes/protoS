@@ -5,7 +5,7 @@
 /***COMPONENTS***/
 
 /***COMPONENT***/
-export default function Header(data) {
+export default function Header() {
   /*DOM*/
   return (
     <header id="header">

@@ -1,7 +1,7 @@
 /******INTRO MODULE******/
 
 /***COMPONENT***/
-export default function Intro(data) {
+export default function Intro() {
   /*DOM*/
   return (
     <section id="intro">
@@ -9,23 +9,40 @@ export default function Intro(data) {
         <img
           fetchpriority="high"
           src="/img/LogoL.webp"
-          className=" logo img-responsive page-scroll top"
+          className=" logo img-responsive"
           alt="Logo du Service Numérique d'Accompagnement Pédagogique"
         />{" "}
         <div className="under">
-          {/*<h2>Bienvenue</h2>*/}
-          <p>
+          <p className="firstP">
             Les missions de notre service s’articulent autour de deux
-            composantes :{" "}
-            <strong>l’accompagnement à la transformation numérique</strong> et
-            la <strong>conception de ressources.</strong>
+            composantes :
           </p>
+          <div className="introInline">
+            <img
+              src="/img/Ico1.webp"
+              className=" iconIntro img-responsive"
+              alt="Acompagnement numérique"
+            />{" "}
+            <p>
+              <strong>L’accompagnement à la transformation numérique</strong>
+            </p>
+          </div>
+          <div className="introInline">
+            <img
+              src="/img/Ico2.webp"
+              className=" iconIntro img-responsive"
+              alt="Conception de ressources"
+            />{" "}
+            <p>
+              <strong>La conception de ressources.</strong>
+            </p>
+          </div>
           <p>
-            Nous proposons notre appui aux enseignants afin d'
-            <strong>identifier leurs besoins</strong>, de leur{" "}
+            Nous proposons notre appui aux enseignants afin{" "}
+            <strong>d'identifier leurs besoins</strong>, de leur{" "}
             <strong>proposer des solutions numériques adaptées</strong>, de{" "}
             <strong>
-              créer en collaboration des supports pédagogiques adaptés
+              créer en collaboration des supports pédagogiques numériques
             </strong>{" "}
             et de <strong> faciliter la prise en main des outils dédiés</strong>
             .
