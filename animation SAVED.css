@@ -1,0 +1,41 @@
+/***ANIMATION***/
+
+/*FADE IN*/
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*LOGO SWING*/
+@keyframes anipers {
+  0% {
+    transform: translateX(0px);
+    transform-origin: center;
+    transform: perspective(1200px) rotateY(15deg);
+  }
+  25% {
+    transform: translateX(-10);
+  }
+  50% {
+    transform: translateX(10px);
+    transform-origin: center;
+    transform: perspective(1200px) rotateY(-15deg);
+  }
+  100% {
+    transform: translateX(0px);
+    transform-origin: center;
+    transform: perspective(1200px) rotateY(15deg);
+  }
+}
