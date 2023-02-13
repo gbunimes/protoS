@@ -157,6 +157,7 @@ nav .logo {
 .under p {
   font-size: 20px;
   text-align: left;
+  line-height: 150%;
 }
 .introInline {
   display: flex;
@@ -173,6 +174,7 @@ nav .logo {
 }
 .actu {
   flex: 0.7;
+  min-height: 500px;
 }
 .actu iframe {
   box-shadow: 0px 0px 20px -5px var(--tertiary);
@@ -320,6 +322,30 @@ nav .logo {
   }
 }
 
+/**********638************/
+@media (max-width: 638px) {
+  #intro .logo {
+    display: none;
+  }
+  .intro {
+    flex: unset;
+  }
+  .intro h1 {
+    width: 60%;
+    font-size: 22px;
+    color: var(--secondary);
+  }
+  .under {
+    width: 90%;
+  }
+  .firstP {
+    text-align: center !important;
+  }
+  .intro strong {
+    font-size: 20px;
+  }
+}
+
 /**********468************/
 @media (max-width: 468px) {
   /***HEADER***/
@@ -352,12 +378,11 @@ nav .logo {
     border: 1px solid var(--whiteish);
   }
   .txtWrapper a:focus,
-  .txtWrapper a:visited,
   .txtWrapper a:active,
   .txtWrapper a:hover {
-    font-weight: bold;
+    background-color: var(--main);
   }
   #intro {
-    margin: 260px auto;
+    margin-top: 200px;
   }
 }
