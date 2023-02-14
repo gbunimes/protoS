@@ -4,11 +4,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;1,300&display=swap");
 
 /***BODY***/
-
 body * {
   z-index: 1;
 }
-
 body,
 html {
   /*Color Variables*/
@@ -17,7 +15,6 @@ html {
   --main: #21759c;
   --secondary: #e84e24;
   --tertiary: #434341;
-
   /*General*/
   font-display: swap;
   text-rendering: optimizeLegibility !important;
@@ -37,9 +34,8 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  /*overflow-x: hidden !important;*/
 }
-
 /*texts/links*/
 a,
 p {
@@ -59,7 +55,6 @@ a:hover {
 a:hover {
   color: var(--secondary);
 }
-
 /***HEADER***/
 /*Header Nav*/
 nav {
@@ -99,7 +94,6 @@ nav .logo {
   font-family: spectral, arial;
   margin: 0 10px;
 }
-
 /***INTRO***/
 /*Intro Wrapper*/
 #intro {
@@ -107,6 +101,7 @@ nav .logo {
   display: flex;
   flex-direction: row-reverse;
   width: 100%;
+  height: 100vh;
   justify-content: space-between;
   padding: 25px;
   max-width: 90%;
@@ -204,8 +199,9 @@ nav .logo {
   font-family: spectral, arial;
 }
 /***MISSION***/
-/*Section Wrapper*/
+/*Section Wrapper*/ /*************************************************************/
 .missionWrapper {
+  height: 100vh;
 }
 /*Mission Title*/
 #mission {
@@ -290,11 +286,9 @@ nav .logo {
 }
 
 /***FOOTER***/
-/***MISSION***/
-/***CONTACT***/
+- /***CONTACT***/
 
 /***ANIMATION***/
-
 /*logo swing*/
 @keyframes anipers {
   0% {
@@ -316,9 +310,7 @@ nav .logo {
     transform: perspective(1200px) rotateY(15deg);
   }
 }
-
 /*Background anim*/
-
 @keyframes move-dot1 {
   0% {
     transform: translateX(-50%) translateY(-50%);
@@ -345,7 +337,9 @@ nav .logo {
   }
 }
 .animation-example {
-  opacity: 0.2;
+  /*opacity: 0.5;*/
+  opacity: 0.3;
+
   z-index: 0 !important;
   position: fixed;
   top: 50%;
@@ -376,7 +370,8 @@ nav .logo {
 .animation-example > .item > .line {
   height: 100%;
   width: calc(50% + 1px);
-  border-right: 2px dashed #5bc0eb;
+  /*border-right: 2px dashed #5bc0eb;*/
+  border-right: 2px dashed var(--whiteish);
 }
 .animation-example > .item > .dot {
   position: absolute;
@@ -395,10 +390,8 @@ nav .logo {
   transform: translateX(-50%) translateY(-50%);
   height: 5%;
   width: 5%;
-  /*background: #fff;*/
   background: var(--secondary);
-
-  border: 2px solid #5bc0eb;
+  border: 2px solid var(--whiteish);
 
   border-radius: 50%;
 }
@@ -434,8 +427,8 @@ nav .logo {
   width: 70%;
   height: 40%;
   border-right: none;
-  border-left: 2px dashed #5bc0eb;
-  border-bottom: 2px dashed #5bc0eb;
+  border-left: 2px dashed var(--whiteish);
+  border-bottom: 2px dashed var(--whiteish);
 }
 .animation-example > .item.-type2 > .dot {
   top: 30%;
@@ -489,13 +482,13 @@ nav .logo {
 .animation-example > .center > .circle:nth-child(1) {
   height: 100%;
   width: 100%;
-  background: #fff;
+  background-color: var(--secondary);
   box-shadow: 0 0 3vmin rgba(0, 0, 0, 0.1);
 }
 .animation-example > .center > .circle:nth-child(2) {
   height: 80%;
   width: 80%;
-  border: 2px solid #5bc0eb;
+  border: 2px solid var(--whiteish);
 }
 .animation-example > .center > .circle:nth-child(3) {
   height: 50%;
@@ -586,6 +579,10 @@ nav .logo {
   /***HEADER***/
   .txtWrapper a {
     font-size: 15px;
+  }
+  #intro {
+    padding: 0;
+    margin-top: 250px !important;
   }
 }
 
