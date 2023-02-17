@@ -14,6 +14,7 @@
     --secondary: #e84e24;
     --dark: #434341;
 }
+
 .py-6 {
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -38,6 +39,7 @@
     visibility: hidden;
     transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
     z-index: 99999;
+    /*background-color: var(--primary) !important;*/
 }
 
 #spinner.show {
@@ -46,10 +48,15 @@
     opacity: 1;
 }
 
+#spinner .text-primary {
+    background-color: var(--primary) !important;
+}
+
+/*
 .spinner-grow text-primary {
-    /*spinner color PERSO**********************/
     color: red !important;
 }
+*/
 
 /*** Button ***/
 .btn {
@@ -63,6 +70,7 @@
 .btn.btn-outline-primary:hover {
     color: #ffffff;
 }
+
 .btn:hover {
     background-color: var(--secondary);
     border: var(--secondary);
@@ -94,6 +102,14 @@
 }
 
 /*** Navbar ***/
+
+.navbar-nav {
+    text-align: center;
+}
+.fa-plus-square {
+    margin: 0 !important;
+}
+
 .navbar.sticky-top {
     top: -100px;
     transition: 0.5s;
@@ -134,12 +150,14 @@
     background-color: var(--primary);
     color: var(--light);
 }
+
 .dropdown-item:hover,
 .dropdown-item:active,
 .dropdown-item:focus {
     background-color: var(--primaryLighter) !important;
     color: var(--light);
 }
+
 @media (max-width: 991.98px) {
     .navbar .navbar-nav .nav-link {
         margin-right: 0;
@@ -178,8 +196,9 @@ nav .logo {
     margin: 11px 50px 11px 0;
     max-height: 100%;
 }
+
 .title {
-    font-size: 20px;
+    font-size: 16px;
     margin: auto;
     text-align: center;
     text-align: left;
@@ -187,9 +206,32 @@ nav .logo {
     /*background: var(--primary);
     padding: 10px;
     color: var(--light);*/
+    text-align: center;
+    /*max-width: 300px;*/
 }
+
+@media (max-width: 1250px) {
+    .title {
+        display: none;
+    }
+}
+
 .fa-plus-square {
     font-size: 20px;
+}
+
+@media (max-width: 992px) {
+    .border-end {
+        border-right: 0 solid #dee2e6 !important;
+    }
+}
+@media (max-width: 358px) {
+    nav {
+        justify-content: center !important;
+    }
+    .sub {
+        display: none;
+    }
 }
 
 /*** Header ***/
@@ -206,12 +248,15 @@ nav .logo {
     background: rgba(0, 0, 0, 0.45);
     z-index: 1;
 }
+
 .introText1 {
     justify-content: flex-end !important;
 }
+
 .introText2 {
     justify-content: flex-start !important;
 }
+
 .introText1 h1,
 .introText2 h1 {
     font-size: 50px !important;
@@ -226,8 +271,13 @@ nav .logo {
 .carousel-control-next-icon {
     width: 3rem;
     height: 3rem;
+    /*
     background-color: var(--primary);
     border: 10px solid var(--primary);
+    */
+    background-color: var(--primary);
+    border: 10px solid var(--primary);
+    border-radius: 50%;
 }
 
 @media (max-width: 768px) {
