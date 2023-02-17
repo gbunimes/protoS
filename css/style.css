@@ -15,6 +15,55 @@
     --dark: #434341;
 }
 
+body {
+    animation: theme 21s linear infinite;
+}
+body:after,
+body:before {
+    content: "";
+    display: block;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    width: 100vmax;
+    height: 100vmax;
+    background: rgba(255, 255, 255, 0.8);
+    /*background: var(--light);*/
+    animation: background 30s linear infinite;
+    pointer-events: none;
+}
+body:after {
+    left: 15vw;
+}
+body:before {
+    right: 15vw;
+    animation-delay: -30s;
+    animation-direction: reverse;
+}
+@keyframes theme {
+    0% {
+        background: var(--secondary);
+    }
+
+    100% {
+        background: var(--primary);
+    }
+}
+@keyframes background {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
 .py-6 {
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -149,6 +198,7 @@
 .dropdown-item {
     background-color: var(--primary);
     color: var(--light);
+    border: 0.5px solid var(--light);
 }
 
 .dropdown-item:hover,
@@ -251,10 +301,12 @@ nav .logo {
 
 .introText1 {
     justify-content: flex-end !important;
+    margin-left: 150px;
 }
 
 .introText2 {
     justify-content: flex-start !important;
+    margin-right: 150px;
 }
 
 .introText1 h1,
@@ -305,6 +357,20 @@ nav .logo {
 }
 
 /*** Facts ***/
+
+.introIcon {
+    border-radius: 50%;
+}
+
+.iconTxt {
+    display: flex;
+}
+
+.facts h5 {
+    align-self: center;
+    color: var(--dark);
+}
+
 @media (min-width: 991.98px) {
     .facts {
         position: relative;
