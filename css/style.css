@@ -18,6 +18,7 @@
 body {
     animation: theme 21s linear infinite;
 }
+
 body:after,
 body:before {
     content: "";
@@ -31,17 +32,21 @@ body:before {
     height: 100vmax;
     background: rgba(255, 255, 255, 0.8);
     /*background: var(--light);*/
-    animation: background 30s linear infinite;
+    animation: background 90s linear infinite;
     pointer-events: none;
 }
+
 body:after {
     left: 15vw;
 }
+
 body:before {
     right: 15vw;
-    animation-delay: -30s;
-    animation-direction: reverse;
+    /*animation-delay: -30s;*/
+    /*animation-direction: reverse;*/
+    animation-direction: alternate-reverse;
 }
+
 @keyframes theme {
     0% {
         background: var(--secondary);
@@ -51,10 +56,12 @@ body:before {
         background: var(--primary);
     }
 }
+
 @keyframes background {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -155,6 +162,7 @@ body:before {
 .navbar-nav {
     text-align: center;
 }
+
 .fa-plus-square {
     margin: 0 !important;
 }
@@ -241,8 +249,6 @@ body:before {
 
 /*Header Logo*/
 nav .logo {
-    /*position: relative;
-    float: left;*/
     margin: 11px 50px 11px 0;
     max-height: 100%;
 }
@@ -252,12 +258,7 @@ nav .logo {
     margin: auto;
     text-align: center;
     text-align: left;
-
-    /*background: var(--primary);
-    padding: 10px;
-    color: var(--light);*/
     text-align: center;
-    /*max-width: 300px;*/
 }
 
 @media (max-width: 1250px) {
@@ -275,16 +276,19 @@ nav .logo {
         border-right: 0 solid #dee2e6 !important;
     }
 }
+
 @media (max-width: 358px) {
     nav {
         justify-content: center !important;
     }
+
     .sub {
         display: none;
     }
 }
 
 /*** Header ***/
+
 .carousel-caption {
     top: 0;
     left: 0;
@@ -295,7 +299,7 @@ nav .logo {
     justify-content: center;
     text-align: center;
     /*background: rgba(0, 0, 0, 0.75);*/
-    background: rgba(0, 0, 0, 0.45);
+    background: rgba(0, 0, 0, 0.4);
     z-index: 1;
 }
 
@@ -352,7 +356,7 @@ nav .logo {
     background-size: cover;
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-item+.breadcrumb-item::before {
     color: #999999;
 }
 
@@ -379,16 +383,67 @@ nav .logo {
     }
 }
 
+/*about us / wow*/
+.wow {
+    margin-top: -5px;
+    background-color: var(--light);
+}
+
+.iconIntro {
+    max-width: 75px;
+    margin-right: 15px;
+}
+
+.icoW {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+
+}
+
+.wow h6 {
+    color: var(--secondary) !important;
+}
+
+.wow p {
+    text-align: justify;
+    color: var(--dark);
+}
+}
+
 /*** Courses ***/
+.outils{
+    margin-top: 50px;
+}
+.courses .wow p {
+    text-align: center!important;
+}
 .courses {
     min-height: 100vh;
-    background: linear-gradient(
-            rgba(255, 255, 255, 0.9),
-            rgba(255, 255, 255, 0.9)
-        ),
+    /*
+    background: linear-gradient(rgba(255, 255, 255, 0.9),
+        rgba(255, 255, 255, 0.9)),
         url(../img/carousel-1.jpg) center center no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    */
+}
+
+.courses .btn-outline-primary, .courses a{
+    color: var(--light)!important;
+    border-color: var(--primary)
+    }
+.courses-overlay{
+    background: rgba(0, 0, 0, 0.7)!important;
+}
+
+.wow2 {
+    background: unset;
+
+}
+
+.courses h1 {
+    font-size: 26px;
 }
 
 .courses-item .courses-overlay {
@@ -409,6 +464,35 @@ nav .logo {
 .courses-item:hover .courses-overlay {
     height: 100%;
     opacity: 1;
+}
+
+.card {
+    background-color: var(--primary);
+    padding: 15px !important;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.card2 {
+    /*padding: 25px;*/
+    background: unset;
+    margin: 25px;
+}
+
+.card h5,
+.card p {
+    color: var(--light) !important;
+}
+
+.card h5 {
+    text-transform: uppercase;
+    padding-bottom: 5px ;
+    border-bottom: 2px solid var(--light);
+    width: fit-content;
+    margin: auto;
 }
 
 /*** Team ***/
