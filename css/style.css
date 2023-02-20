@@ -318,6 +318,7 @@ nav .logo {
 }
 
 @media (max-width: 1023px) {
+
     .introText1 h1,
     .introText2 h1 {
         font-size: 25px !important;
@@ -325,6 +326,7 @@ nav .logo {
 }
 
 @media (max-width: 985px) {
+
     .introText1 h1,
     .introText2 h1 {
         font-size: 20px !important;
@@ -340,6 +342,7 @@ nav .logo {
 }
 
 @media (max-width: 985px) {
+
     .introText1,
     .introText2 {
         margin: auto;
@@ -348,108 +351,111 @@ nav .logo {
 }
 
 @media (max-width: 360px) {
+
     .introText1 h1,
     .introText2 h1 {
         font-size: 15px !important;
     }
 }
 
-    .carousel-control-prev,
-    .carousel-control-next {
-        width: 15%;
-    }
+.carousel-control-prev,
+.carousel-control-next {
+    width: 15%;
+}
 
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-        width: 3rem;
-        height: 3rem;
-        /*
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+    /*
     background-color: var(--primary);
     border: 10px solid var(--primary);
     */
-        background-color: var(--primary);
-        border: 10px solid var(--primary);
-        border-radius: 50%;
+    background-color: var(--primary);
+    border: 10px solid var(--primary);
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    #header-carousel .carousel-item {
+        position: relative;
+        min-height: 450px;
     }
 
-    @media (max-width: 768px) {
-        #header-carousel .carousel-item {
-            position: relative;
-            min-height: 450px;
-        }
-
-        #header-carousel .carousel-item img {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    }
-
-    .page-header {
-        background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-            url(../img/carousel-1.jpg) center center no-repeat;
-        background-size: cover;
-    }
-
-    .breadcrumb-item + .breadcrumb-item::before {
-        color: #999999;
-    }
-
-    /*** Facts ***/
-
-    .introIcon {
-        border-radius: 50%;
-    }
-
-    .iconTxt {
-        display: flex;
-    }
-
-    .facts h5 {
-        align-self: center;
-        color: var(--dark);
-    }
-    .aboutM h6{
-        margin-top: 25px;
-    }
-
-    @media (min-width: 991.98px) {
-        .facts {
-            position: relative;
-            margin-top: -75px;
-            z-index: 1;
-        }
-    }
-
-    /*about us / wow*/
-    .wow {
-        margin-top: -5px;
-        background-color: var(--light);
-    }
-
-    .iconIntro {
-        max-width: 75px;
-        margin-right: 15px;
-    }
-
-    .icoW {
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 25px;
-    }
-
-    .wow h6 {
-        color: var(--secondary) !important;
-    }
-
-    .wow p {
-        text-align: justify;
-        color: var(--dark);
+    #header-carousel .carousel-item img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 
+.page-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+        url(../img/carousel-1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    color: #999999;
+}
+
+/*** Facts ***/
+
+.introIcon {
+    border-radius: 50%;
+}
+
+.iconTxt {
+    display: flex;
+}
+
+.facts h5 {
+    align-self: center;
+    color: var(--dark);
+}
+
+.aboutM h6 {
+    margin-top: 25px;
+}
+
+@media (min-width: 991.98px) {
+    .facts {
+        position: relative;
+        margin-top: -75px;
+        z-index: 1;
+    }
+}
+
+/*about us / wow*/
+.wow {
+    margin-top: -5px;
+    background-color: var(--light);
+}
+
+.iconIntro {
+    max-width: 75px;
+    margin-right: 15px;
+}
+
+.icoW {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+.wow h6 {
+    color: var(--secondary) !important;
+}
+
+.wow p {
+    text-align: justify;
+    color: var(--dark);
+}
+}
+
 /*** Courses ***/
+
 .outils {
     margin-top: 50px;
 }
@@ -457,6 +463,7 @@ nav .logo {
 .courses .wow p {
     text-align: center !important;
 }
+
 .courses {
     min-height: 100vh;
     height: 100vh;
@@ -467,6 +474,7 @@ nav .logo {
     color: var(--light) !important;
     border-color: var(--primary);
 }
+
 .courses-overlay {
     background: rgba(0, 0, 0, 0.7) !important;
 }
@@ -494,6 +502,13 @@ nav .logo {
     transition: 0.5s;
 }
 
+.courses-item{
+    transform: scale(1);
+    transition: 0.4s;
+    box-shadow: 2px 2px 7px 0.5px var(--tertiary);
+
+}
+
 .courses-item:hover .courses-overlay {
     height: 100%;
     opacity: 1;
@@ -513,6 +528,11 @@ nav .logo {
     background: unset;
     margin: 25px;
     max-height: 450px;
+
+}
+
+.courses-item:hover{
+    transform: scale(1.07);
 }
 
 .card h5,
@@ -535,7 +555,12 @@ nav .logo {
 
 .team-item {
     padding: 0.75rem;
+    /*CHECK ANIM*/
 }
+
+
+
+
 
 .team-item::after {
     position: absolute;
@@ -573,6 +598,11 @@ nav .logo {
     height: 100%;
     opacity: 1;
 }
+
+.memberDes{
+    color: var(--light)!important;
+}
+
 
 /*** Testimonial ***/
 .testimonial-carousel .owl-dots {
