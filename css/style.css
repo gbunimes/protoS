@@ -91,9 +91,8 @@ body:before {
     bottom: 30px;
     z-index: 99;
     transition: 0.4s;
-    border: none ! !important;
+    border: none! !important;
 }
-
 / .back-to-top:hover {
     background-color: var(--secondary) !important;
 }
@@ -465,12 +464,10 @@ nav .logo {
     text-align: justify;
     color: var(--dark);
 }
-
 /*** Actu ***/
 .Actu iframe {
     height: 700px !important;
 }
-
 /*** Courses ***/
 
 .outils {
@@ -694,7 +691,6 @@ nav .logo {
     color: var(--secondary) !important;
     margin: auto;
 }
-
 .footLogo {
     display: flex;
     flex-direction: column;
@@ -702,7 +698,6 @@ nav .logo {
     align-items: center;
     padding: 0;
 }
-
 .footLogo img {
     max-width: 80px;
 }
@@ -723,7 +718,6 @@ nav .logo {
     text-align: center !important;
     border: none;
 }
-
 .modalB:hover,
 .modalB:focus,
 .modalB:active,
@@ -732,21 +726,17 @@ nav .logo {
     color: inherit;
     border: none;
 }
-
 .modal-title {
     color: var(--secondary);
 }
-
 .modal-header {
     border-color: var(--primary);
 }
-
 .modal-body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-
 .modal-body div {
     margin: 15px;
 }
