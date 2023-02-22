@@ -7,6 +7,19 @@
     --secondary: #e84e24;
     --dark: #434341;
 }
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
 /*Misc*/
 .title {
     background-color: transparent !important;
@@ -18,8 +31,11 @@ strong {
     font-weight: bold !important;
 }
 
-.shad {
+nav,
+footer {
     box-shadow: 2px 2px 7px 0.5px var(--dark) !important;
+    background: center / cover no-repeat url("../img/bckg.webp");
+    background-color: var(--light) !important;
 }
 
 .text-white {
@@ -78,7 +94,8 @@ strong {
 /*Back to top arrow*/
 .back-to-top {
     position: fixed;
-    display: none;
+    display: flex;
+    justify-content: center;
     right: 30px;
     bottom: 30px;
     z-index: 99;
@@ -88,6 +105,13 @@ strong {
 .back-to-top:hover {
     background-color: var(--secondary) !important;
 }
+
+.back-to-top:active,
+.back-to-top:focus,
+.back-to-top:visited {
+    border: none !important;
+}
+
 /*Spinner*/
 #spinner {
     opacity: 0;
@@ -463,7 +487,7 @@ nav .logo {
     height: 0;
     top: 0;
     left: 0;
-    background: #ffffff;
+    /*background: #ffffff;*/
     transition: 0.5s;
     z-index: -1;
 }
@@ -501,8 +525,9 @@ nav .logo {
 .footer {
     background-color: var(--light) !important;
     padding: 10px;
-    color: var(--dark);
+    color: var(--dark) !important;
 }
+
 .subFoot {
     display: flex;
     flex-direction: column;
