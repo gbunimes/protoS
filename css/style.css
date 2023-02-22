@@ -8,19 +8,6 @@
     --dark: #434341;
 }
 
-#background-video {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-    opacity: 0.2;
-}
-
 /*Misc*/
 .title {
     background-color: transparent !important;
@@ -35,10 +22,7 @@ strong {
 nav,
 footer {
     box-shadow: 2px 2px 7px 0.5px var(--dark) !important;
-    /*background: center / cover no-repeat url("../img/bckg.webp");
-    background-color: var(--light) !important;*/
 }
-
 .text-white {
     color: var(--light);
 }
@@ -195,7 +179,18 @@ nav .logo {
 .fa-plus-square {
     font-size: 20px;
 }
+
+/*Nav Contact button*/
+.mainC {
+    -webkit-animation: jello-horizontal 0.9s both;
+    animation: jello-horizontal 0.9s both;
+}
+
 /*Carousel*/
+.carousel {
+    filter: saturate(85%);
+    z-index: 1;
+}
 
 .carousel-caption {
     top: 0;
@@ -206,9 +201,8 @@ nav .logo {
     align-items: center;
     justify-content: center;
     text-align: center;
-    /*background: rgba(0, 0, 0, 0.75);*/
-    background: rgba(0, 0, 0, 0.4);
-    z-index: 1;
+    /*    background: rgba(0, 0, 0, 0.4);*/ /*black filter*/
+    z-index: 2;
 }
 .carousel-control-prev,
 .carousel-control-next {
@@ -244,6 +238,7 @@ nav .logo {
 .introText1 h1,
 .introText2 h1 {
     font-size: 35px !important;
+    /**************************************************************/
 }
 
 /***INTRO***/
@@ -259,7 +254,13 @@ nav .logo {
 }
 
 .intro .row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -25px;
+}
+.intro .row .col-lg-3 {
     background-color: var(--light);
+    z-index: 5;
 }
 
 /***ABOUT***/
@@ -478,6 +479,11 @@ nav .logo {
 .team-item {
     padding: 0.75rem;
 }
+/*#équipe .title*/
+section:not(#about, #intro) {
+    margin-top: 15vh;
+    min-height: 100vh;
+}
 .team-item h5 {
     font-size: 16px !important;
     color: var(--primary);
@@ -623,6 +629,7 @@ nav .logo {
 }
 
 /***ANIMATION***/
+
 body {
     animation: theme 21s linear infinite;
 }
@@ -637,9 +644,10 @@ body:before {
     height: 100vh;
     width: 100vmax;
     height: 100vmax;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.7);
     animation: background 90s linear infinite;
     pointer-events: none;
+    /*filter: blur(5px);*/
 }
 body:after {
     left: 15vw;
@@ -648,12 +656,90 @@ body:before {
     right: 15vw;
     animation-direction: alternate-reverse;
 }
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.2; /*main videos tests*/
+    opacity: 0.5; /*square*/
+    filter: invert(100%);
+}
+
+@-webkit-keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+@keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
 @keyframes theme {
     0% {
         background: var(--secondary);
     }
 
     100% {
+        /*background: var(--primaryLighter);*/
         background: var(--primary);
     }
 }
