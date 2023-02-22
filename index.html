@@ -8,7 +8,7 @@
         <meta content="" name="keywords" />
         <meta content="" name="description" />
         <!-- Favicon -->
-        <link href="./favicon.ico" rel="icon" />
+        <link href="./img/favicon.ico" rel="icon" />
         <!-- Google Web Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,10 +30,11 @@
         <div id="spinner" class="show  position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-grow text-primary" role="status"></div>
         </div>
+
         <!--NAV-->
         <nav class="navbar navbar-expand-lg  navbar-light sticky-top p-0">
             <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
-                <img fetchpriority="high" src="./LogoS.webp" class="logo" />
+                <img fetchpriority="high" src="./img/LogoS.webp" class="logo" />
                 <h2 class="sub m-0">SNAP</h2>
             </a>
             <h1 class="headerTitle">
@@ -60,6 +61,7 @@
                 </div>
             </div>
         </nav>
+
         <!--CAROUSEL-->
         <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
             <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -105,8 +107,9 @@
                 </button>
             </div>
         </div>
-        <!--FACTS-->
-        <div class="container-fluid facts py-5 pt-lg-0">
+
+        <!--INTRO-->
+        <section id="intro" class="container-fluid intro py-5 pt-lg-0">
             <div class="container py-5 pt-lg-0">
                 <div class="row gx-0">
                     <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
@@ -153,11 +156,12 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
         <!--ABOUT-->
-        <div class="container-xxl py-6 aboutM">
+        <section id="about" class="container-xxl py-6">
             <div class="container">
-                <div class="row g-5">
+                <div class="row g-5 shadow">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="position-relative overflow-hidden ps-5 pt-5 h-100" style="min-height: 400px">
                             <img class="position-absolute w-100 h-100" src="img/about-1.webp" alt="" style="object-fit: cover" />
@@ -166,12 +170,12 @@
                     </div>
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="h-100">
-                            <h1 class="display-6 mb-4">
+                            <h1 class="display-6 mb-4 aboutTitle">
                                 Nous accompagnons les enseignants dans leur transformation
                                 numérique
                             </h1>
                             <p>
-                                Nous sommes à votre disposition afin de répondre ensemble aux nouveaux enjeux de l'enseignement. Nous travaillons ensemble pour proposer des supports interactifs pertinents à vos étudiants.
+                                <strong>Nous sommes à votre disposition</strong> afin de répondre ensemble aux nouveaux enjeux de l'enseignement. Nous travaillons en commun ou selon vos directives pour <strong>proposer des supports interactifs pertinents à vos étudiants</strong>.
                             </p>
                             <div class="icoW">
                                 <img src="./img/Ico1.webp" class="iconIntro" alt="Acompagnement numérique" />
@@ -179,43 +183,44 @@
                             </div>
                             <p class="mb-4">
                                 Pour autant, une fois que notre accompagnement a porté ses fruits, nous restons à votre service afin de
-                                réfléchir ensemble à des pistes d’amélioration, de
+                                <strong>réfléchir ensemble à des pistes d’amélioration</strong>, de
                                 répondre à de nouvelles problématiques, de
                                 créer en collaboration des supports pédagogiques
                                 interactifs
-                                et, surtout, d’assurer le suivi de notre travail commun</strong>.
+                                et, surtout, d’assurer le suivi de notre travail commun.
                             </p>
                             <div class="vidWrap">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/HCC9A2jVaDg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <iframe width="280" height="158" src="https://www.youtube.com/embed/HCC9A2jVaDg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+
         <!--ACTU-->
-        <div id="Actualités" class="container-xxl py-6 Actu">
+        <section id="Actualités" class="container-xxl py-6 Actu">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow wow2 fadeInUp" data-wow-delay="0.1s" style="max-width: 500px" * />
-                <h1 class="display-12 mb-12">
+                <h1 class="display-12 mb-12 title">
                     Actualités
                 </h1>
             </div>
-            <iframe src="https://www.unimes.fr/fr/index.html" frameborder="0" border="0" cellspacing="0" title="Site de l'Université de Nîmes" style="border-style: none;width: 100%; height: 100%;"></iframe>
-        </div>
-        </div>        
-
+            <iframe src="https://www.unimes.fr/fr/index.html" frameborder="0" border="0" cellspacing="0" title="Site de l'Université de Nîmes" style="border-style: none;width: 100%; height: 100%;" class="shadow"></iframe>
+            </div>
+        </section>
+        
         <!--TOOLS-->
-        <div id="outils" class=" outils container-xxl courses my-6 py-6 pb-0">
+        <section id="outils" class=" outils container-xxl courses my-6 py-6 pb-0">
             <div class="container">
-                <div class="text-center mx-auto mb-5 wow wow2 fadeInUp" data-wow-delay="0.1s" style="max-width: 500px" * />                
-                <h1 class="display-6 mb-4 outilTitle">
+                <div class="text-center mx-auto mb-5 wow wow2 fadeInUp" data-wow-delay="0.1s" style="max-width: 500px" * />
+                <h1 class="display-6 mb-4 title">
                     Créons ensemble du contenu pédagogique multimédia
                 </h1>
             </div>
             <div class=" row g-4 justify-content-center cardRow">
                 <div class=" card2 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="  courses-item d-flex flex-column  overflow-hidden h-100">
+                    <div class="  courses-item shadow d-flex flex-column  overflow-hidden h-100">
                         <div class="card text-center p-4 pt-0">
                             <h5 class="mb-3">Rendez-vous d'accompagnement</h5>
                             <p>
@@ -232,7 +237,7 @@
                     </div>
                 </div>
                 <div class=" card2 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="  courses-item d-flex flex-column  overflow-hidden h-100">
+                    <div class="  courses-item shadow d-flex flex-column  overflow-hidden h-100">
                         <div class="card  text-center p-4 pt-0">
                             <h5 class="mb-3">Plateforme Moodle</h5>
                             <p>
@@ -249,7 +254,7 @@
                     </div>
                 </div>
                 <div class=" card2 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="  courses-item d-flex flex-column  overflow-hidden h-100">
+                    <div class="  courses-item shadow d-flex flex-column  overflow-hidden h-100">
                         <div class="card text-center p-4 pt-0">
                             <h5 class="mb-3">h5p</h5>
                             <p>
@@ -266,7 +271,7 @@
                     </div>
                 </div>
                 <div class=" card2 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="  courses-item d-flex flex-column  overflow-hidden h-100">
+                    <div class="  courses-item shadow d-flex flex-column  overflow-hidden h-100">
                         <div class="card text-center p-4 pt-0">
                             <h5 class="mb-3">Fiches Conseil</h5>
                             <p>
@@ -283,7 +288,7 @@
                     </div>
                 </div>
                 <div class=" card2 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="  courses-item d-flex flex-column  overflow-hidden h-100">
+                    <div class="  courses-item shadow d-flex flex-column  overflow-hidden h-100">
                         <div class="card text-center p-4 pt-0">
                             <h5 class="mb-3">Genially</h5>
                             <p>
@@ -300,7 +305,7 @@
                     </div>
                 </div>
                 <div class=" card2 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="  courses-item d-flex flex-column  overflow-hidden h-100">
+                    <div class="  courses-item shadow d-flex flex-column  overflow-hidden h-100">
                         <div class="card text-center p-4 pt-0">
                             <h5 class="mb-3">Infographies personnalisées</h5>
                             <p>
@@ -317,7 +322,7 @@
                     </div>
                 </div>
                 <div class=" card2 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="  courses-item d-flex flex-column  overflow-hidden h-100">
+                    <div class="  courses-item shadow d-flex flex-column  overflow-hidden h-100">
                         <div class="card text-center p-4 pt-0">
                             <h5 class="mb-3">Créations vidéo</h5>
                             <p>
@@ -334,13 +339,13 @@
                     </div>
                 </div>
             </div>
-        </div>
-        
+            </div>
+        </section>
         <!--TESTIMONIES-->
-        <div id="témoignages" class="container-xxl py-6">
+        <section id="témoignages" class="container-xxl py-6">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px">
-                    <h1 class="display-6 mb-4 testiTitle">Témoignages d'enseignants</h1>
+                    <h1 class="display-6 mb-4 title">Témoignages d'enseignants</h1>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-8 wow fadeInUp testiW" data-wow-delay="0.1s">
@@ -357,7 +362,7 @@
                                     Inutile de dire que sans le SNAP, mes X-mens n'auraient pas reçu la même formation.
                                 </p>
                                 <!--Mettre lien projets moodle<-->
-                                <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block testiBtn">Découvrir le projet<i class="fa fa-search ms-3"></i></a>
+                                <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block testiBtn">Notre réalisation<i class="fa fa-search ms-3"></i></a>
                                 <hr class="w-25 mx-auto" />
                                 <h5>Professeur Xavier</h5>
                                 <span>Directeur / télépathe</span>
@@ -377,7 +382,7 @@
                                     et tempor diam tempor erat.
                                 </p>
                                 <!--Mettre lien projets moodle<-->
-                                <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block testiBtn">Découvrir le projet<i class="fa fa-search ms-3"></i></a>
+                                <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block testiBtn">Notre réalisation<i class="fa fa-search ms-3"></i></a>
                                 <hr class="w-25 mx-auto" />
                                 <h5>Florence Cibba</h5>
                                 <span>Departement Psychologie, Lettres, Langues & Histoire</span>
@@ -397,7 +402,7 @@
                                     et tempor diam tempor erat.
                                 </p>
                                 <!--Mettre lien projets moodle<-->
-                                <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block testiBtn">Découvrir le projet<i class="fa fa-search ms-3"></i></a>
+                                <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block testiBtn">Notre réalisation<i class="fa fa-search ms-3"></i></a>
                                 <hr class="w-25 mx-auto" />
                                 <h5>Florence Cibba</h5>
                                 <span>Departement Psychologie, Lettres, Langues & Histoire</span>
@@ -406,15 +411,15 @@
                     </div>
                 </div>
             </div>
-        </div>        
+        </section>
         <!--TEAM-->
-        <div id="équipe" class="container-xxl py-6">
+        <section id="équipe" class="container-xxl py-6">
             <div class="container">
                 <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px">
-                    <h1 class="text-primary text-uppercase mb-2 teamTitle">
+                    <h1 class="text-primary text-uppercase mb-2 title">
                         Notre équipe
                     </h1>
-                </div>                
+                </div>
                 <div class="row g-0 team-items">
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="team-item position-relative">
@@ -529,14 +534,14 @@
                     </div>
                 </div>
             </div>
-        </div>        
+        </section>
         <!--FOOTER-->
-        <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-6 wow fadeIn" data-wow-delay="0.1s">
+        <footer class="container-fluid bg-dark text-light footer my-6 mb-0 py-6 wow fadeIn" data-wow-delay="0.1s">
             <div class="container">
                 <div class="row g-5">
                     <div class="col-lg-6 subFoot col-md-6">
                         <div class="footLogo">
-                            <img fetchpriority="high" src="./LogoS.webp" class="logo" />
+                            <img fetchpriority="high" src="./img/LogoS.webp" class="logo" />
                             <h4 class="text-white mb-4">SNAP</h4>
                         </div>
                         <p class="mb-2">
@@ -591,10 +596,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>                    
+                    </div>
                 </div>
             </div>
-        </div>
+        </footer>
         <!--BACK ARROW-->
         <a href="#top" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
         <!--JS-->
