@@ -187,9 +187,15 @@ nav .logo {
 }
 
 /*Carousel*/
+
+.carousel * :not(.iconCar) {
+    pointer-events: none !important;
+}
+.iconCar {
+    box-shadow: 2px 2px 7px 0.5px var(--dark) !important;
+}
 .carousel {
     filter: saturate(85%);
-    z-index: 1;
 }
 
 .carousel-caption {
@@ -403,6 +409,10 @@ nav .logo {
 }
 
 /***TESTIMONIES***/
+#témoignages {
+    background-color: var(--light);
+}
+
 #témoignages p {
     text-transform: initial;
 }
@@ -481,8 +491,8 @@ nav .logo {
 }
 /*#équipe .title*/
 section:not(#about, #intro) {
-    margin-top: 15vh;
-    min-height: 100vh;
+    /*margin-top: 15vh;
+    min-height: 100vh;*/
 }
 .team-item h5 {
     font-size: 16px !important;
