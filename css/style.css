@@ -336,6 +336,10 @@ nav .logoU {
     background: unset !important;
 }
 
+#about {
+    max-width: 80% !important;
+}
+
 #about .wow {
     margin-top: -5px;
     background: url("../img/bckg2.webp"), var(--light);
@@ -681,13 +685,6 @@ nav .logoU {
     display: flex;
     justify-content: center;
 }
-
-/*
-section:not(#about, #intro) {
-    margin-top: 15vh;
-    min-height: 100vh;
-}
-*/
 
 .team-item h5 {
     font-size: 16px !important;
@@ -1247,6 +1244,10 @@ body:before {
     #témoignages img {
         max-height: 75px;
         width: auto;
+    }
+
+    #témoignages p {
+        font-size: 16px !important;
     }
 }
 
