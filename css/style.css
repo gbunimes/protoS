@@ -572,13 +572,6 @@ nav .logoU {
     text-transform: initial;
 }
 
-.testiBtn {
-    width: 50%;
-    margin: auto;
-    max-width: 300px;
-    font-size: 14px !important;
-}
-
 .testimonial-carousel .owl-dots {
     height: 40px;
     margin-top: 25px;
@@ -631,7 +624,7 @@ nav .logoU {
 .testiBtn {
     width: 50%;
     margin: auto;
-    max-width: 300px;
+    max-width: 400px;
     font-size: 14px !important;
 }
 
@@ -727,11 +720,13 @@ nav .logoU {
     transition: 0.5s;
 }
 
+/*Active when descriptions are here*/
+/*
 .team-item:hover .team-social {
     height: 100%;
     opacity: 1;
 }
-
+*/
 .team-social {
     padding: 5px;
 }
