@@ -322,6 +322,13 @@ nav .logoU {
 
 /***ABOUT***/
 
+.aboutTextW p {
+    margin: 35px auto;
+    /*display: flex;
+    flex-direction: column!important;
+    justify-content: space-between!important;*/
+}
+
 .about2 {
     background: unset !important;
 }
@@ -369,9 +376,31 @@ nav .logoU {
     color: var(--secondary) !important;
 }
 
-#about .wow p {
+#about .wow p, #about .wow li{
     text-align: justify;
     color: var(--dark);
+}
+#about .wow ul{
+    margin: 0 25px 0 -5px;
+    text-align: left;
+}
+#about .wow li{
+    margin: 15px auto;
+}
+
+#about .container{
+    background: unset!important;
+}
+
+
+.secondImgAbout {
+    background-color: transparent; !important;
+/*    background: var(--light);*/
+    border-radius: 50%;
+    margin: 15px;
+    padding: 10px;
+        box-shadow: 0px 0px 15px -8px var(--dark) !important;
+
 }
 
 .eventW {
@@ -456,12 +485,13 @@ nav .logoU {
 .vidWrap {
     display: flex;
     justify-content: center;
-    margin-bottom: 25px;
+    margin-top: 75px;
 }
-.vidWrap iframe {
-    width: 100%;
-    height: auto;
+/*.vidWrap iframe {
+    width: auto!important;
+    height: auto!important;
 }
+*/
 
 /***ACTU***/
 .Actu iframe {
@@ -864,6 +894,10 @@ footer .container .row {
 body {
     animation: theme 21s linear infinite;
 }
+body a:hover{
+    color: var(--secondary);
+
+}
 
 body:after,
 body:before {
@@ -1057,6 +1091,7 @@ body:before {
     .headerTitle2 {
         display: none;
     }
+
     .navbar .nav-item .dropdown-menu,
     .dropdown {
         display: none;
@@ -1114,6 +1149,7 @@ body:before {
         width: 100% !important;
     }
 }
+
 /*----------MAX : 806-----------*/
 @media (max-width: 806px) {
     .headerTitle {
@@ -1171,7 +1207,7 @@ body:before {
         --bs-gutter-x: none !important;
     }
 
-    .firstImgAbout {
+    .firstImgAbout, .vidWrap{
         display: none;
     }
 
@@ -1179,7 +1215,9 @@ body:before {
         display: flex;
         /*justify-content: center;*/
         padding: 0 !important;
-        max-height: 75px !important;
+        /*max-height: 75px !important;*/}
+        .aboutWr{
+        max-height: 250px;
     }
 
     .secondImgAbout {
@@ -1189,7 +1227,10 @@ body:before {
     }
 
     .aboutWr {
-        max-height: 200px !important;
+        /*max-height: 200px !important;*/
+        display: flex!important;
+        flex-direction: column!important;
+        justify-content: space-between!important;
     }
 
     .headerTitle2 {
