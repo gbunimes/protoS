@@ -233,6 +233,10 @@ nav .logoU {
     pointer-events: none !important;
 }
 
+.carousel-inner {
+    max-height: 370px !important;
+}
+
 .iconCar {
     box-shadow: 2px 2px 7px 0.5px var(--dark) !important;
 }
@@ -278,17 +282,6 @@ nav .logoU {
 }
 
 /*Carousel Text*/
-.introText1 {
-    justify-content: flex-end !important;
-    margin-left: 150px;
-}
-
-.introText2 {
-    justify-content: flex-start !important;
-    margin-right: 150px;
-}
-
-.introText1 h1,
 .introText2 h1 {
     font-size: 35px !important;
 }
@@ -313,11 +306,18 @@ nav .logoU {
     margin-top: -25px;
 }
 
-.intro .row .col-lg-3 {
+.squareText {
     background: url("../img/bckg2.webp"), var(--light);
     background-position: center;
     background-size: cover;
     z-index: 5;
+    width: 300px !important;
+    margin: auto !important;
+}
+
+.squareText .d-flex {
+    align-items: center !important;
+    justify-content: center !important;
 }
 
 /***ABOUT***/
@@ -1020,10 +1020,11 @@ body:before {
 
 /*----------MAX : 1023----------*/
 @media (max-width: 1023px) {
-    .introText1 h1,
+    /*
     .introText2 h1 {
         font-size: 25px !important;
     }
+    */
 }
 
 /*--------OVER 992-----------*/
@@ -1065,26 +1066,16 @@ body:before {
 
 /*----------MAX : 985-----------*/
 @media (max-width: 985px) {
-    .introText1,
     .introText2 {
         margin: auto;
-        max-width: 50%;
+        max-width: 70%;
     }
 }
 
 /*----------MAX : 958-----------*/
 @media (max-width: 985px) {
-    .introText1 h1,
     .introText2 h1 {
         font-size: 20px !important;
-    }
-
-    .introText1 {
-        margin-left: 250px;
-    }
-
-    .introText2 {
-        margin-right: 250px;
     }
 }
 
@@ -1117,7 +1108,6 @@ body:before {
         margin: 25px !important;
     }
 }
-
 /*----------MAX : 806-----------*/
 @media (max-width: 806px) {
     .headerTitle {
@@ -1152,12 +1142,10 @@ body:before {
         object-fit: cover;
     }
 
-    .introText1,
     .introText2 {
         margin: auto;
     }
 
-    .introText1 h1,
     .introText2 h1 {
         font-size: 25px !important;
         justify-self: center;
@@ -1214,7 +1202,6 @@ body:before {
 
 /*----------MAX : 560-----------*/
 @media (max-width: 560px) {
-    .introText1 h1,
     .introText2 h1 {
         font-size: 18px !important;
         justify-self: center;
@@ -1248,10 +1235,11 @@ body:before {
 
 /*----------MAX : 360-----------*/
 @media (max-width: 360px) {
-    .introText1 h1,
+    /*
     .introText2 h1 {
         font-size: 15px !important;
     }
+    */
 }
 
 /*----------MAX : 358-----------*/
