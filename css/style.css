@@ -277,7 +277,7 @@ nav .logoU {
     background-size: cover;
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-item+.breadcrumb-item::before {
     color: #999999;
 }
 
@@ -376,31 +376,32 @@ nav .logoU {
     color: var(--secondary) !important;
 }
 
-#about .wow p, #about .wow li{
+#about .wow p,
+#about .wow li {
     text-align: justify;
     color: var(--dark);
 }
-#about .wow ul{
+
+#about .wow ul {
     margin: 0 25px 0 -5px;
     text-align: left;
 }
-#about .wow li{
+
+#about .wow li {
     margin: 15px auto;
 }
 
-#about .container{
-    background: unset!important;
+#about .container {
+    background: unset !important;
 }
 
 
 .secondImgAbout {
-    background-color: transparent; !important;
-/*    background: var(--light);*/
+    background-color: transparent;
     border-radius: 50%;
     margin: 15px;
     padding: 10px;
-        box-shadow: 0px 0px 15px -8px var(--dark) !important;
-
+    box-shadow: 0px 0px 15px -8px var(--dark) !important;
 }
 
 .eventW {
@@ -420,7 +421,9 @@ nav .logoU {
     margin-top: 25px;
     max-width: 75% !important;
     text-align: justify;
+    color: var(--dark) !important;
 }
+
 
 .eventSub img {
     margin: 10px;
@@ -487,6 +490,7 @@ nav .logoU {
     justify-content: center;
     margin-top: 75px;
 }
+
 /*.vidWrap iframe {
     width: auto!important;
     height: auto!important;
@@ -568,6 +572,11 @@ nav .logoU {
     height: 100%;
     opacity: 1;
 }
+/*
+.card2:nth-child(even) .card {
+    background-color: var(--secondary);
+}
+*/
 
 .card {
     background-color: var(--primary);
@@ -677,12 +686,54 @@ nav .logoU {
     justify-content: center;
 }
 
-.team-item {
+#équipe strong {
+    color: var(--primary);
+}
+
+.teamSubW {
+    width: 80%;
+    margin: auto !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    margin-bottom: 20px !important;
+}
+
+.teamSubW p:not(.teamSub) {
+    text-align: justify;
+     !important;
+    width: 75%;
+    margin: 20px auto;
+}
+
+.teamSub {
+    text-align: center;
+    color: var(--primary);
+    font-weight: bold;
+    padding: 10px;
+}
+
+.team-item,
+.teamSubW {
     padding: 0.75rem;
-    background: url("../img/bckg2.webp"), var(--light);
+    background: url("../img/bckg2.webp"), var(--light) !important;
     background-position: center;
     background-size: cover;
     margin: 10px;
+}
+
+.teamSubWUnder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.teamSubW img {
+    margin: auto;
+    max-height: 50px;
 }
 
 .team-item img {
@@ -754,8 +805,8 @@ nav .logoU {
     transition: 0.5s;
 }
 
-/*Active when descriptions are here*/
-/*
+/*toggle when descriptions
+
 .team-item:hover .team-social {
     height: 100%;
     opacity: 1;
@@ -894,7 +945,8 @@ footer .container .row {
 body {
     animation: theme 21s linear infinite;
 }
-body a:hover{
+
+body a:hover {
     color: var(--secondary);
 
 }
@@ -1207,30 +1259,32 @@ body:before {
         --bs-gutter-x: none !important;
     }
 
-    .firstImgAbout, .vidWrap{
+    .firstImgAbout,
+    .vidWrap {
         display: none;
     }
 
     .secondImgWrap {
         display: flex;
-        /*justify-content: center;*/
         padding: 0 !important;
-        /*max-height: 75px !important;*/}
-        .aboutWr{
+    }
+
+    .aboutWr {
         max-height: 250px;
     }
 
     .secondImgAbout {
         position: relative !important;
         margin: 0 auto 0 auto !important;
-        background: unset !important;
+        background: unset!important;
+        box-shadow: unset!important;
     }
 
     .aboutWr {
         /*max-height: 200px !important;*/
-        display: flex!important;
-        flex-direction: column!important;
-        justify-content: space-between!important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: space-between !important;
     }
 
     .headerTitle2 {
@@ -1244,6 +1298,17 @@ body:before {
     #intro .col-lg-3 {
         max-height: 150px;
         margin: 10px auto !important;
+    }
+    .teamSubW{
+        width: 100%;}
+
+        .teamSubW p{
+        text-align: center!important;
+
+    }
+    .teamSubWUnder{
+        width: 100%;
+        flex-direction: column;
     }
 }
 
