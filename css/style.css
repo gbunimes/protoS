@@ -458,6 +458,10 @@ nav .logoU {
     justify-content: center;
     margin-bottom: 25px;
 }
+.vidWrap iframe {
+    width: 100%;
+    height: auto;
+}
 
 /***ACTU***/
 .Actu iframe {
@@ -1018,15 +1022,6 @@ body:before {
     }
 }
 
-/*----------MAX : 1023----------*/
-@media (max-width: 1023px) {
-    /*
-    .introText2 h1 {
-        font-size: 25px !important;
-    }
-    */
-}
-
 /*--------OVER 992-----------*/
 @media (min-width: 992px) {
     .navbar .nav-item .dropdown-menu {
@@ -1060,6 +1055,10 @@ body:before {
     }
 
     .headerTitle2 {
+        display: none;
+    }
+    .navbar .nav-item .dropdown-menu,
+    .dropdown {
         display: none;
     }
 }
@@ -1104,8 +1103,15 @@ body:before {
         display: block;
     }
 
-    .intro .row .col-lg-3 {
-        margin: 25px !important;
+    .intro .row:first-child {
+        /*justify-content: center;*/
+        margin-top: 50px;
+    }
+
+    .squareText {
+        margin: 10px !important;
+        /*width: unset !important;*/
+        width: 100% !important;
     }
 }
 /*----------MAX : 806-----------*/
