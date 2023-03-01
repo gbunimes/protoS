@@ -572,6 +572,7 @@ nav .logoU {
     height: 100%;
     opacity: 1;
 }
+
 /*
 .card2:nth-child(even) .card {
     background-color: var(--secondary);
@@ -1276,8 +1277,8 @@ body:before {
     .secondImgAbout {
         position: relative !important;
         margin: 0 auto 0 auto !important;
-        background: unset!important;
-        box-shadow: unset!important;
+        background: unset !important;
+        box-shadow: unset !important;
     }
 
     .aboutWr {
@@ -1299,14 +1300,17 @@ body:before {
         max-height: 150px;
         margin: 10px auto !important;
     }
-    .teamSubW{
-        width: 100%;}
 
-        .teamSubW p{
-        text-align: center!important;
+    .teamSubW {
+        width: 100%;
+    }
+
+    .teamSubW p {
+        text-align: center !important;
 
     }
-    .teamSubWUnder{
+
+    .teamSubWUnder {
         width: 100%;
         flex-direction: column;
     }
