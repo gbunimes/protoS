@@ -5,7 +5,9 @@
     --primary: #21759c;
     --primaryLighter: #2e9bcd;
     --secondary: #e84e24;
-    --dark: #434341;
+    /*--dark: #434341;*/
+    --dark: black;
+
 }
 
 /*Misc*/
@@ -293,8 +295,8 @@ nav .logoU {
 }
 
 /***INTRO***/
-#intro{
-    padding: 0!important;
+#intro {
+    padding: 0 !important;
 }
 
 
@@ -330,7 +332,7 @@ nav .logoU {
 .squareText .d-flex {
     align-items: center !important;
     justify-content: center !important;
-        padding: 5px!important;
+    padding: 5px !important;
 
 }
 
@@ -358,8 +360,9 @@ nav .logoU {
 }
 
 #about {
-    /*max-width: 80% !important;*//**************************/
-    padding: 50px 0 52px 0!important;
+    /*max-width: 80% !important;*/
+    /**************************/
+    padding: 50px 0 52px 0 !important;
 
 }
 
@@ -382,19 +385,21 @@ nav .logoU {
     margin-right: 15px;
 }
 
-#about2, #about2 .container, #about2 .row   {
+#about2,
+#about2 .container,
+#about2 .row {
     padding: 0;
 }
 
- #about2 .row{
-    display: flex!important;
+#about2 .row {
+    display: flex !important;
     margin: auto;
-    justify-content: center!important;
+    justify-content: center !important;
     /*justify-content: space-around!important;*/
 
-    width: 100%!important;
+    width: 100% !important;
 
- }
+}
 
 .missionCard {
     margin: 10px;
@@ -405,7 +410,7 @@ nav .logoU {
     font-size: 20px;
     justify-content: center;
     min-height: 210px;
-    max-width:310px; 
+    max-width: 310px;
     color: black;
     transition: 0.4s;
     transform: scale(1);
@@ -413,51 +418,55 @@ nav .logoU {
 }
 
 .flip-card {
-  background-color: transparent;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    background-color: transparent;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
 }
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
-  position: relative;  
-  background: url("../img/bckg2.webp"), var(--light)!important;
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
+    position: relative;
+    background: url("../img/bckg2.webp"), var(--light) !important;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 
 
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-/*.flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
-}*/
+}
 
 /* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-  pointer-events: none;
-  padding: 15px;
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+    pointer-events: none;
+    padding: 15px;
 
 }
 
 /* Style the back side */
 .flip-card-back {
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    color: var(--primary);
 }
 
-.missionCard strong{
+.missionCard strong {
     color: var(--secondary);
 }
 
@@ -776,17 +785,17 @@ nav .logoU {
     color: var(--secondary) !important;
 }
 
-.TestImg{
+.TestImg {
     margin: auto;
-width: 50%!important;
-height: auto!important;
+    width: 50% !important;
+    height: auto !important;
 
 }
 
 /***REALISATIONS***/
 
-#réalisations h1{
-    color: var(--primary)!important;
+#réalisations h1 {
+    color: var(--primary) !important;
 }
 
 .card3 {
@@ -795,35 +804,59 @@ height: auto!important;
     width: 300px;
     height: 300px;
 }
-.card4, .card5{
-    color: white;    
+
+.card4,
+.card5 {
+    color: white;
     padding: 10px;
 }
- .card4{
+
+.card4 {
     max-height: 50px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background:var(--secondary) !important;    
+    background: var(--secondary) !important;
 }
 
 .card4 p {
     margin: auto;
 }
+
 .card5 {
     height: 100%;
+
+}
+
+#réalisations .row .card2:nth-of-type(1) .card5,
+#réalisations .row .card2:nth-of-type(4) .card5,
+#réalisations .row .card2:nth-of-type(6) .card5{
     background: url("../img/real.webp");
     background-position: center;
     background-size: cover;
 }
 
-#réalisations .courses-overlay{
+#réalisations .row .card2:nth-of-type(2) .card5,
+#réalisations .row .card2:nth-of-type(7) .card5 {
+    background: url("../img/courses-3.webp");
+    background-position: center;
+    background-size: cover;
+}
+
+#réalisations .row .card2:nth-of-type(3) .card5,
+#réalisations .row .card2:nth-of-type(5) .card5 {
+    background: url("../img/courses-4.webp");
+    background-position: center;
+    background-size: cover;
+}
+
+ #réalisations .courses-overlay {
     padding: 10px;
 }
-#réalisations .courses-overlay p{
 
-    text-align: justify!important;
+#réalisations .courses-overlay p {
+    text-align: justify !important;
 }
 
 /***TEAM***/
@@ -1345,7 +1378,8 @@ body:before {
     .squareText {
         margin: 10px !important;
         /*width: unset !important;*/
-        width: 100% !important;}
+        width: 100% !important;
+    }
 
 }
 
