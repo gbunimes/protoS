@@ -680,6 +680,13 @@ nav .logoU {
     color: var(--secondary) !important;
 }
 
+.TestImg{
+    margin: auto;
+width: 50%!important;
+height: auto!important;
+
+}
+
 /***TEAM***/
 .team-items {
     margin: -0.75rem;
