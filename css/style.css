@@ -229,12 +229,17 @@ nav .logoU {
 }
 
 /*Carousel*/
+
+
+
 .carousel * :not(.iconCar) {
     pointer-events: none !important;
 }
 
 .carousel-inner {
-    max-height: 370px !important;
+    /*max-height: 370px !important;*/
+    max-height: 170px !important;
+
 }
 
 .iconCar {
@@ -255,6 +260,7 @@ nav .logoU {
     justify-content: center;
     text-align: center;
     z-index: 2;
+    max-height: 185px;
 }
 
 .carousel-control-prev,
@@ -283,10 +289,15 @@ nav .logoU {
 
 /*Carousel Text*/
 .introText2 h1 {
-    font-size: 35px !important;
+    font-size: 25px !important;
 }
 
 /***INTRO***/
+#intro{
+    padding: 0!important;
+}
+
+
 .introIcon {
     border-radius: 50%;
 }
@@ -315,9 +326,12 @@ nav .logoU {
     margin: auto !important;
 }
 
+
 .squareText .d-flex {
     align-items: center !important;
     justify-content: center !important;
+        padding: 5px!important;
+
 }
 
 /***ABOUT***/
@@ -344,7 +358,9 @@ nav .logoU {
 }
 
 #about {
-    max-width: 80% !important;
+    /*max-width: 80% !important;*//**************************/
+    padding: 50px 0 52px 0!important;
+
 }
 
 #about .wow {
@@ -362,8 +378,87 @@ nav .logoU {
 }
 
 .iconIntro {
-    max-width: 75px;
+    max-width: 60px;
     margin-right: 15px;
+}
+
+#about2, #about2 .container, #about2 .row   {
+    padding: 0;
+}
+
+ #about2 .row{
+    display: flex!important;
+    margin: auto;
+    justify-content: center!important;
+    /*justify-content: space-around!important;*/
+
+    width: 100%!important;
+
+ }
+
+.missionCard {
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    justify-content: center;
+    min-height: 210px;
+    max-width:310px; 
+    color: black;
+    transition: 0.4s;
+    transform: scale(1);
+
+}
+
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;  
+  background: url("../img/bckg2.webp"), var(--light)!important;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+
+
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+/*.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}*/
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  pointer-events: none;
+  padding: 15px;
+
+}
+
+/* Style the back side */
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.missionCard strong{
+    color: var(--secondary);
 }
 
 .icoW {
@@ -512,6 +607,7 @@ nav .logoU {
     background: unset;
 }
 
+/***PROJETS***/
 /***OUTILS***/
 /***COURSES***/
 .outils {
@@ -685,6 +781,49 @@ nav .logoU {
 width: 50%!important;
 height: auto!important;
 
+}
+
+/***REALISATIONS***/
+
+#réalisations h1{
+    color: var(--primary)!important;
+}
+
+.card3 {
+    background: unset;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+}
+.card4, .card5{
+    color: white;    
+    padding: 10px;
+}
+ .card4{
+    max-height: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background:var(--secondary) !important;    
+}
+
+.card4 p {
+    margin: auto;
+}
+.card5 {
+    height: 100%;
+    background: url("../img/real.webp");
+    background-position: center;
+    background-size: cover;
+}
+
+#réalisations .courses-overlay{
+    padding: 10px;
+}
+#réalisations .courses-overlay p{
+
+    text-align: justify!important;
 }
 
 /***TEAM***/
@@ -1206,8 +1345,8 @@ body:before {
     .squareText {
         margin: 10px !important;
         /*width: unset !important;*/
-        width: 100% !important;
-    }
+        width: 100% !important;}
+
 }
 
 /*----------MAX : 806-----------*/
