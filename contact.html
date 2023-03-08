@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <title>SNAP</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="" name="keywords" />
+        <meta content="" name="description" />
+        <link href="./img/favicon.ico" rel="icon" />
+        <!--FONTS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+        <!--STYLES -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet" />
+        <link
+            href="lib/owlcarousel/assets/owl.carousel.min.css"
+            rel="stylesheet"
+        />
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <video
+            id="background-video"
+            autoplay
+            loop
+            muted
+            poster="./img/bckVid.mp4"
+        >
+            <source src="./img/bckVid.mp4" type="video/mp4" />
+        </video>
+        <!--lOADER-->
+        <div
+            id="spinner"
+            class="show position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+        >
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!--NAV-->
+        <nav
+            id="top"
+            class="navbar navbar-expand-lg navbar-light sticky-top p-0"
+        >
+            <a href="https://www.unimes.fr/" target="_blank">
+                <img
+                    fetchpriority="high"
+                    src="./img/unimes2.webp"
+                    class="logoU"
+                />
+            </a>
+            <a
+                href="index.html"
+                class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5"
+            >
+                <h1 class="headerTitle">
+                    Service Numérique & Accompagnement Pédagogique
+                </h1>
+                <h1 class="headerTitle2">SNAP</h1>
+            </a>
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active backA"
+                    ><i class="fa fa-arrow-left" aria-hidden="true"></i
+                ></a>
+            </div>
+        </nav>
+        <!--CAROUSEL-->
+        <div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
+            <div
+                id="header-carousel"
+                class="carousel slide"
+                data-bs-ride="carousel"
+            >
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img
+                            class="w-100 carouIm1"
+                            src="img/carousel-0.webp"
+                            alt="Les missions du SNAP"
+                        />
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div
+                                    class="introText2 row justify-content-center"
+                                >
+                                    <div class="col-lg-7">
+                                        <h1
+                                            class="display-2 text-light mb-5 animated slideInDown"
+                                        >
+                                            Soutien des enseignants dans leur
+                                            approche pédagogique et numérique
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            class="w-100 carouIm2"
+                            src="img/carousel-1.webp"
+                            alt="Les missions du SNAP"
+                        />
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div
+                                    class="introText2 row justify-content-center"
+                                >
+                                    <div class="col-lg-7">
+                                        <h1
+                                            class="display-2 text-light mb-5 animated slideInDown"
+                                        >
+                                            Création de contenus et ressources
+                                            multimédia
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            class="w-100 carouIm2"
+                            src="img/carousel-0.webp"
+                            alt="Les missions du SNAP"
+                        />
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div
+                                    class="introText2 row justify-content-center"
+                                >
+                                    <div class="col-lg-7">
+                                        <h1
+                                            class="display-2 text-light mb-5 animated slideInDown"
+                                        >
+                                            Accompagnement aux outils
+                                            pédagogiques et techniques
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            class="w-100 carouIm2"
+                            src="img/carousel-1.webp"
+                            alt="Les missions du SNAP"
+                        />
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div
+                                    class="introText2 row justify-content-center"
+                                >
+                                    <div class="col-lg-7">
+                                        <h1
+                                            class="display-2 text-light mb-5 animated slideInDown"
+                                        >
+                                            Administration de la plateforme de
+                                            cours en ligne
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            class="w-100 carouIm2"
+                            src="img/carousel-0.webp"
+                            alt="Les missions du SNAP"
+                        />
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div
+                                    class="introText2 row justify-content-center"
+                                >
+                                    <div class="col-lg-7">
+                                        <h1
+                                            class="display-2 text-light mb-5 animated slideInDown"
+                                        >
+                                            Aménagement pédagogique & numérique
+                                            des espaces physiques
+                                            d’apprentissage
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img
+                            class="w-100 carouIm2"
+                            src="img/carousel-1.webp"
+                            alt="Les missions du SNAP"
+                        />
+                        <div class="carousel-caption">
+                            <div class="container">
+                                <div
+                                    class="introText2 row justify-content-center"
+                                >
+                                    <div class="col-lg-7">
+                                        <h1
+                                            class="display-2 text-light mb-5 animated slideInDown"
+                                        >
+                                            Veille des usages pédagogiques et
+                                            numériques
+                                        </h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#header-carousel"
+                    data-bs-slide="prev"
+                >
+                    <span
+                        class="carousel-control-prev-icon iconCar"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#header-carousel"
+                    data-bs-slide="next"
+                >
+                    <span
+                        class="carousel-control-next-icon iconCar"
+                        aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!--CONTACT START-->
+
+        <!--CONTACT END-->
+
+        <!--ACTU-->
+        <section id="actualités" class="container-xxl py-6 about2">
+            <div class="container-xxl py-6 fadeInUp">
+                <div class="row g-5">
+                    <div class="col-lg-12 wow" data-wow-delay="0.5s">
+                        <div class="">
+                            <h1 class="display-6 mb-4 aboutTitle title">
+                                Nos prochains évènements
+                            </h1>
+                            <div class="eventW">
+                                <div class="event col-lg-12 shadow">
+                                    <div class="eventHeader">
+                                        <i class="fa fa-calendar"></i>
+                                        <p>
+                                            Rendez-vous pédagogiques 17/03/2023
+                                        </p>
+                                    </div>
+                                    <div class="eventSub">
+                                        <img
+                                            class="img-fluid"
+                                            src="img/about-3.webp"
+                                            alt="évenement SNAP"
+                                        />
+                                        <p>
+                                            Dolores sed duo clita tempor justo
+                                            dolor et stet lorem kasd labore
+                                            dolore lorem ipsum. At lorem lorem
+                                            magna ut et, nonumy et labore et
+                                            tempor diam tempor erat. Dolores sed
+                                            duo clita tempor justo dolor et stet
+                                            lorem kasd labore dolore lorem
+                                            ipsum. At lorem lorem magna ut et,
+                                            nonumy et labore et tempor diam
+                                            tempor erat.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="event col-lg-12 shadow">
+                                    <div class="eventHeader">
+                                        <i class="fa fa-calendar"></i>
+                                        <p>Atelier MOODLE 04/05/2023</p>
+                                    </div>
+                                    <div class="eventSub">
+                                        <img
+                                            class="img-fluid"
+                                            src="img/about-4.webp"
+                                            alt="évenement SNAP"
+                                        />
+                                        <p>
+                                            Dolores sed duo clita tempor justo
+                                            dolor et stet lorem kasd labore
+                                            dolore lorem ipsum. At lorem lorem
+                                            magna ut et, nonumy et labore et
+                                            tempor diam tempor erat. Dolores sed
+                                            duo clita tempor justo dolor et stet
+                                            lorem kasd labore dolore lorem
+                                            ipsum. At lorem lorem magna ut et,
+                                            nonumy et labore et tempor diam
+                                            tempor erat.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="event col-lg-12 shadow">
+                                    <div class="eventHeader">
+                                        <i class="fa fa-calendar"></i>
+                                        <p>
+                                            Hado Geopardy enseignants-étudiants
+                                            06/06/2023
+                                        </p>
+                                    </div>
+                                    <div class="eventSub">
+                                        <img
+                                            class="img-fluid"
+                                            src="img/about-5.webp"
+                                            alt="évenement SNAP"
+                                        />
+                                        <p>
+                                            Dolores sed duo clita tempor justo
+                                            dolor et stet lorem kasd labore
+                                            dolore lorem ipsum. At lorem lorem
+                                            magna ut et, nonumy et labore et
+                                            tempor diam tempor erat. Dolores sed
+                                            duo clita tempor justo dolor et stet
+                                            lorem kasd labore dolore lorem
+                                            ipsum. At lorem lorem magna ut et,
+                                            nonumy et labore et tempor diam
+                                            tempor erat.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--FOOTER-->
+        <footer
+            class="container-fluid bg-dark text-light footer my-6 mb-0 py-6 wow fadeIn"
+            data-wow-delay="0.1s"
+        >
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-lg-6 subFoot col-md-6">
+                        <div class="footLogo">
+                            <img
+                                fetchpriority="high"
+                                src="./img/LogoS.webp"
+                                class="logo"
+                            />
+                            <h4 class="text-white mb-4">
+                                Service Numérique & Accompagnement Pédagogique
+                            </h4>
+                        </div>
+                        <p class="mb-2">
+                            <i class="fa fa-map-marker-alt me-3"></i> Université
+                            de Nîmes - Site Vauban - Bat D, salle D121 - Rue du
+                            Dr Georges Salan - CS13019 30021 Nîmes Cedex 01
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-phone-alt me-3"></i> 06 36 65 65 65
+                        </p>
+                        <p class="mb-2">
+                            <i class="fa fa-envelope me-3"></i>
+                            <a href="mailto:snap@unimes.fr">snap@unimes.fr </a>
+                        </p>
+                    </div>
+                    <div class="col-lg-6 subFoot col-md-6">
+                        <a href="https://www.unimes.fr/" target="_blank">
+                            <img
+                                fetchpriority="high"
+                                src="./img/unimes.webp"
+                                class="logo"
+                            />
+                        </a>
+                        <!-- Button trigger modal -->
+                        <button
+                            type="button"
+                            class="btn btn-primary modalB"
+                            data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"
+                        >
+                            Mentions légales
+                        </button>
+                        <!-- Modal -->
+                        <div
+                            class="modal fade"
+                            id="exampleModal"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalLabel"
+                            aria-hidden="true"
+                        >
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5
+                                            class="modal-title"
+                                            id="exampleModalLabel"
+                                        >
+                                            Mentions légales
+                                        </h5>
+                                        <button
+                                            type="button"
+                                            class="btn-close"
+                                            data-bs-dismiss="modal"
+                                            aria-label="Close"
+                                        ></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div>
+                                            <p class="mb-2">
+                                                Directeur de publication :
+                                                Xavier Moulin.
+                                            </p>
+                                            <a
+                                                href="mailto:Xavier.moulin@unimes.fr"
+                                                >Xavier.moulin@unimes.fr</a
+                                            >
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">
+                                                Administrateur Web : Gillian
+                                                Brousse.
+                                            </p>
+                                            <a
+                                                href="mailto:gillian.brousse@unimes.fr"
+                                                >gillian.brousse@unimes.fr</a
+                                            >
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">
+                                                Contributeurs : Marine Moreau,
+                                                Marina O, Coralie Allanet, Tom
+                                                Servière.
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2">
+                                                Hébergeur: Université de Nîmes,
+                                                Rue du Dr Georges Salan -
+                                                CS13019 30021 Nîmes Cedex 01
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--BACK ARROW-->
+        <a href="#top" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+            ><i class="bi bi-arrow-up"></i
+        ></a>
+        <!--JS-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

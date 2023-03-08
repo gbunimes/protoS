@@ -190,3 +190,10 @@ nav .logoU {
 	justify-content: center !important;
 	padding: 5px !important;
 }
+.backA {
+	font-size: 28px;
+}
+
+.carousel-inner2 {
+	max-height: 150px !important;
+}

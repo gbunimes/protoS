@@ -110,6 +110,7 @@
     border-bottom: 2px solid var(--light);
     width: fit-content;
     font-size: 18px;
+    margin: auto;
 }
 
 #besoins .container {
