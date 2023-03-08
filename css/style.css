@@ -400,11 +400,12 @@ nav .logoU {
     width: 100% !important;
 
 }
-.missionTitle{
-    margin-top: 25px!important;    
-    border: none!important;
-    color: var(--dark)!important;
-    
+
+.missionTitle {
+    margin-top: 25px !important;
+    border: none !important;
+    color: var(--dark) !important;
+
 }
 
 
@@ -515,7 +516,7 @@ nav .logoU {
     margin: 15px;
     padding: 10px;
     box-shadow: 0px 0px 15px -8px var(--dark) !important;
- 
+
 }
 
 .eventW {
@@ -626,9 +627,16 @@ nav .logoU {
     background: unset;
 }
 
+/***BESOINS***/
 /***PROJETS***/
 /***OUTILS***/
 /***COURSES***/
+#besoins {
+
+    margin: 0 auto !important;
+}
+
+
 .outils {
     margin-top: 50px;
     height: auto !important;
@@ -678,9 +686,10 @@ nav .logoU {
     transition: 0.5s;
 }
 
-.courses-item img{
-    /*min-height: 50%;*/
-    height: 200px;/**********************************/
+.courses-item img {
+    min-height: 50%;
+    width: 100% !important;
+    /*height: 200px;*/
 }
 
 
@@ -712,8 +721,12 @@ nav .logoU {
 
 .card2 {
     background: unset;
-    margin: 25px;
+    /*margin: 25px;*/
     max-height: 450px;
+}
+
+#besoins .card2 {
+    margin-top: 50px;
 }
 
 .courses-item:hover {
@@ -738,16 +751,18 @@ nav .logoU {
     /*margin: auto;*/
 }
 
-#projets .container {
-    /*background-color: red;*//********************************/
+#besoins .container {
+    /*background-color: red;*/
+    /********************************/
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0;
 }
 
-.toolButton{
+.toolButton {
     max-width: 75%;
-width: 65%;
+    width: 65%;
 
     margin: auto;
     margin-top: 50px;
@@ -758,7 +773,7 @@ width: 65%;
     transition: 0.4s;
 }
 
-.toolButton:hover{
+.toolButton:hover {
     background-color: var(--primary);
 }
 
