@@ -72,15 +72,12 @@
     background-color: var(--primary);
     padding: 15px !important;
     height: 100%;
-    /*display: block;*/
     display: flex;
     flex-direction: column;
-    /*justify-content: space-between;*/
 }
 
 .card2 {
     background: unset;
-    /*margin: 25px;*/
     max-height: 450px;
 }
 
@@ -107,12 +104,9 @@
     border-bottom: 2px solid var(--light);
     width: fit-content;
     font-size: 18px;
-    /*margin: auto;*/
 }
 
 #besoins .container {
-    /*background-color: red;*/
-    /********************************/
     display: flex;
     flex-direction: column;
     justify-content: center;

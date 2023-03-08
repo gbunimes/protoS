@@ -1,9 +1,5 @@
 /***HEADER***/
 /*Nav*/
-nav {
-	/*background-color: var(--light);*/
-}
-
 .navbar-nav {
 	text-align: center;
 }
@@ -101,7 +97,6 @@ nav .logoU {
 }
 
 .carousel-inner {
-	/*max-height: 370px !important;*/
 	max-height: 170px !important;
 }
 

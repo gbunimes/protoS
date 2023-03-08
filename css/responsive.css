@@ -49,7 +49,6 @@
 
     .headerTitle {
         display: block;
-        /*font-size: 25px !important;*/
     }
 
     .headerTitle2 {
@@ -103,13 +102,11 @@
     }
 
     .intro .row:first-child {
-        /*justify-content: center;*/
         margin-top: 50px;
     }
 
     .squareText {
         margin: 10px !important;
-        /*width: unset !important;*/
         width: 100% !important;
     }
 }
@@ -193,7 +190,6 @@
     }
 
     .aboutWr {
-        /*max-height: 200px !important;*/
         display: flex !important;
         flex-direction: column !important;
         justify-content: space-between !important;
@@ -257,15 +253,6 @@
     #témoignages p {
         font-size: 16px !important;
     }
-}
-
-/*----------MAX : 360-----------*/
-@media (max-width: 360px) {
-    /*
-    .introText2 h1 {
-        font-size: 15px !important;
-    }
-    */
 }
 
 /*----------MAX : 358-----------*/

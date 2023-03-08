@@ -124,7 +124,7 @@
     transition: 0.5s;
 }
 
-/*toggle when descriptions
+/*toggle when description are ok
 
 .team-item:hover .team-social {
     height: 100%;
@@ -139,4 +139,3 @@
     color: var(--light) !important;
     font-size: 12px !important;
 }
-

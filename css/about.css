@@ -2,9 +2,6 @@
 
 .aboutTextW p {
     margin: 35px auto;
-    /*display: flex;
-    flex-direction: column!important;
-    justify-content: space-between!important;*/
 }
 
 .about2 {
@@ -22,8 +19,6 @@
 }
 
 #about {
-    /*max-width: 80% !important;*/
-    /**************************/
     padding: 50px 0 52px 0 !important;
 }
 
@@ -85,10 +80,8 @@
 .flip-card {
     background-color: transparent;
     perspective: 1000px;
-    /* Remove this if you don't want the 3D effect */
 }
 
-/* This container is needed to position the front and back side */
 .flip-card-inner {
     position: relative;
     background: url("../img/bckg2.webp"), var(--light) !important;
@@ -101,12 +94,10 @@
     transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
 
-/* Position the front and back side */
 .flip-card-front,
 .flip-card-back {
     position: absolute;
@@ -122,7 +113,6 @@
     padding: 15px;
 }
 
-/* Style the back side */
 .flip-card-back {
     transform: rotateY(180deg);
     /*color: var(--primary);*/
@@ -205,6 +195,7 @@
     margin-top: 75px;
 }
 
+/*keep video styling for later*/
 /*.vidWrap iframe {
     width: auto!important;
     height: auto!important;
