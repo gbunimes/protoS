@@ -400,6 +400,13 @@ nav .logoU {
     width: 100% !important;
 
 }
+.missionTitle{
+    margin-top: 25px!important;    
+    border: none!important;
+    color: var(--dark)!important;
+    
+}
+
 
 .missionCard {
     margin: 10px;
@@ -506,6 +513,7 @@ nav .logoU {
     margin: 15px;
     padding: 10px;
     box-shadow: 0px 0px 15px -8px var(--dark) !important;
+ 
 }
 
 .eventW {
@@ -715,6 +723,29 @@ nav .logoU {
     width: fit-content;
     margin: auto;
 }
+
+#projets .container {
+    /*background-color: red;*//********************************/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.toolButton{
+    max-width: 75%;
+    margin: auto;
+    margin-top: 50px;
+    min-height: 75px;
+    padding: 20px;
+    font-size: 22px;
+    background-color: var(--secondary);
+    transition: 0.4s;
+}
+
+.toolButton:hover{
+    background-color: var(--primary);
+}
+
 
 /***TESTIMONIES***/
 #témoignages p {
@@ -1459,7 +1490,10 @@ body:before {
         margin: 0 auto 0 auto !important;
         background: unset !important;
         box-shadow: unset !important;
+
     }
+
+
 
     .aboutWr {
         /*max-height: 200px !important;*/
