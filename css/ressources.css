@@ -26,6 +26,13 @@
 .toolWrapper:nth-of-type(odd) {
 	flex-direction: row-reverse;
 }
+/*
+.toolWrapper:nth-of-type(odd) button {
+	right: unset !important;
+	left: 0 !important;
+	border-radius: 0 15px 0 0 !important;
+}
+*/
 .partA {
 	flex: 1;
 }
@@ -38,20 +45,23 @@
 	background-position: center;
 	background-size: cover;
 	padding: 15px;
-	display: flex;
-	flex-direction: column;
-}
-.toolWrapper button {
-	background-color: var(--primary) !important;
-	width: fit-content !important;
-	padding: 7px !important;
-	/*font-size: 20px !important;*/
-	color: white !important;
-	transition: 0.4s !important;
-	/*align-self: flex-end;*/
+	position: relative !important;
 }
 
-.toolWrapper button:hover {
+.partB button {
+	position: absolute !important;
+	bottom: 0px !important;
+	right: 0px !important;
+	background-color: var(--primary) !important;
+	width: fit-content !important;
+	padding: 13px !important;
+	margin: 0 !important;
+	color: white !important;
+	transition: 0.4s !important;
+	border-radius: 15px 0 0 0 !important;
+}
+
+.partB button:hover {
 	background-color: var(--secondary) !important;
 	pointer: cursor;
 	transition: 0.4s !important;
