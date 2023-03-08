@@ -470,7 +470,9 @@ nav .logoU {
 /* Style the back side */
 .flip-card-back {
     transform: rotateY(180deg);
-    color: var(--primary);
+    /*color: var(--primary);*/
+    background-color: var(--primary);
+    color: white;
 }
 
 .missionCard strong {
@@ -676,6 +678,12 @@ nav .logoU {
     transition: 0.5s;
 }
 
+.courses-item img{
+    /*min-height: 50%;*/
+    height: 200px;/**********************************/
+}
+
+
 .courses-item {
     transform: scale(1);
     transition: 0.4s;
@@ -696,9 +704,10 @@ nav .logoU {
     background-color: var(--primary);
     padding: 15px !important;
     height: 100%;
+    /*display: block;*/
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
 }
 
 .card2 {
@@ -716,12 +725,17 @@ nav .logoU {
     color: var(--light) !important;
 }
 
+.card p {
+    font-size: 14px;
+}
+
 .card h5 {
     text-transform: uppercase;
     padding-bottom: 5px;
     border-bottom: 2px solid var(--light);
     width: fit-content;
-    margin: auto;
+    font-size: 18px;
+    /*margin: auto;*/
 }
 
 #projets .container {
@@ -733,6 +747,8 @@ nav .logoU {
 
 .toolButton{
     max-width: 75%;
+width: 65%;
+
     margin: auto;
     margin-top: 50px;
     min-height: 75px;
@@ -831,7 +847,7 @@ nav .logoU {
 
 .card3 {
     background: unset;
-    margin: 10px;
+    margin: 50px 12px 50px 12px;
     width: 300px;
     height: 300px;
 }
