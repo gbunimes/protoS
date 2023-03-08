@@ -1,0 +1,66 @@
+/***REALISATIONS***/
+/*
+#réalisations h1 {
+    color: var(--primary) !important;
+}
+*/
+
+.card3 {
+    background: unset;
+    margin: 50px 12px 50px 12px;
+    width: 300px;
+    height: 300px;
+}
+
+.card4,
+.card5 {
+    color: white;
+    padding: 10px;
+}
+
+.card4 {
+    max-height: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--primary) !important;
+}
+
+.card4 p {
+    margin: auto;
+}
+
+.card5 {
+    height: 100%;
+}
+
+#réalisations .row .card2:nth-of-type(1) .card5,
+#réalisations .row .card2:nth-of-type(4) .card5,
+#réalisations .row .card2:nth-of-type(6) .card5 {
+    background: url("../img/real.webp");
+    background-position: center;
+    background-size: cover;
+}
+
+#réalisations .row .card2:nth-of-type(2) .card5,
+#réalisations .row .card2:nth-of-type(7) .card5 {
+    background: url("../img/courses-3.webp");
+    background-position: center;
+    background-size: cover;
+}
+
+#réalisations .row .card2:nth-of-type(3) .card5,
+#réalisations .row .card2:nth-of-type(5) .card5 {
+    background: url("../img/courses-4.webp");
+    background-position: center;
+    background-size: cover;
+}
+
+#réalisations .courses-overlay {
+    padding: 10px;
+}
+
+#réalisations .courses-overlay p {
+    text-align: justify !important;
+}

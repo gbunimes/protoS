@@ -1,0 +1,212 @@
+/***ABOUT***/
+
+.aboutTextW p {
+    margin: 35px auto;
+    /*display: flex;
+    flex-direction: column!important;
+    justify-content: space-between!important;*/
+}
+
+.about2 {
+    background: unset !important;
+}
+
+.about2 .container .row .wow {
+    background: unset !important;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.about2 .container {
+    background: unset !important;
+}
+
+#about {
+    /*max-width: 80% !important;*/
+    /**************************/
+    padding: 50px 0 52px 0 !important;
+}
+
+#about .wow {
+    margin-top: -5px;
+    background: url("../img/bckg2.webp"), var(--light);
+    background-position: center;
+    background-size: cover;
+    padding: 15px;
+}
+
+#about .logoBis {
+    background: url("../img/bckg2.webp"), var(--light);
+    background-position: center;
+    background-size: cover;
+}
+
+.iconIntro {
+    max-width: 60px;
+    margin-right: 15px;
+}
+
+#about2,
+#about2 .container,
+#about2 .row {
+    padding: 0;
+}
+
+#about2 .row {
+    display: flex !important;
+    margin: auto;
+    justify-content: center !important;
+    /*justify-content: space-around!important;*/
+
+    width: 100% !important;
+}
+
+.missionTitle {
+    margin-top: 25px !important;
+    border: none !important;
+    color: var(--dark) !important;
+}
+
+.missionCard {
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    justify-content: center;
+    min-height: 210px;
+    max-width: 310px;
+    color: black;
+    transition: 0.4s;
+    transform: scale(1);
+}
+
+.flip-card {
+    background-color: transparent;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    background: url("../img/bckg2.webp"), var(--light) !important;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+    pointer-events: none;
+    padding: 15px;
+}
+
+/* Style the back side */
+.flip-card-back {
+    transform: rotateY(180deg);
+    /*color: var(--primary);*/
+    background-color: var(--primary);
+    color: white;
+}
+
+.missionCard strong {
+    color: var(--secondary);
+}
+
+.icoW {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 25px;
+}
+
+#about .wow h6 {
+    color: var(--secondary) !important;
+}
+
+#about .wow p,
+#about .wow li {
+    text-align: justify;
+    color: var(--dark);
+}
+
+#about .wow ul {
+    margin: 0 25px 0 -5px;
+    text-align: left;
+}
+
+#about .wow li {
+    margin: 15px auto;
+}
+
+#about .container {
+    background: unset !important;
+}
+
+.secondImgAbout {
+    background-color: transparent;
+    border-radius: 50%;
+    margin: 15px;
+    padding: 10px;
+    box-shadow: 0px 0px 15px -8px var(--dark) !important;
+}
+
+.about3 {
+    max-width: 25px;
+    justify-self: center;
+    margin: auto !important;
+}
+
+.aboutTitle {
+    font-size: 25px;
+    max-width: 75%;
+    margin: auto;
+    color: var(--secondary);
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--primary);
+    width: fit-content;
+}
+
+#about .fadeInUp {
+    padding: 15px !important;
+    background: url("../img/bckg2.webp"), var(--light);
+    background-position: center;
+    background-size: cover;
+}
+
+#about h6 {
+    margin-top: 25px;
+}
+
+.vidWrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+}
+
+/*.vidWrap iframe {
+    width: auto!important;
+    height: auto!important;
+}
+*/

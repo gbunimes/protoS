@@ -1,0 +1,117 @@
+/***FOOTER***/
+.footer {
+    background: url("../img/bckg2.webp"), var(--light) !important;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+    color: var(--dark) !important;
+}
+
+footer .container .row {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+}
+
+.subFoot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer p {
+    text-align: left !important;
+}
+
+.footer a {
+    color: var(--primary) !important;
+    margin: auto;
+}
+
+.footLogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.footLogo img {
+    max-width: 80px;
+}
+
+.footLogo h4 {
+    color: var(--dark) !important;
+    margin-top: 15px;
+    padding: 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.modalB {
+    all: unset !important;
+    cursor: pointer !important;
+    margin: auto !important;
+    width: 100% !important;
+    color: var(--primary) !important;
+    text-align: center !important;
+    border: none;
+}
+
+.modalB:hover,
+.modalB:focus,
+.modalB:active,
+.modalB:visited {
+    background: inherit;
+    color: inherit;
+    border: none;
+}
+
+.modal-title {
+    color: var(--secondary);
+}
+
+.modal-header {
+    border-color: var(--primary);
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.modal-body div {
+    margin: 15px;
+}
+
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: var(--light);
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.lastF {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: var(--light);
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    color: var(--primary);
+    letter-spacing: 1px;
+    box-shadow: none;
+}
