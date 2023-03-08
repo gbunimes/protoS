@@ -1,5 +1,30 @@
 /***RESPONSIVE***/
 
+/*----------MAX : 1496-----------*/
+@media (max-width: 1496px) {
+    .nav-link {
+        font-size: 15px !important;
+    }
+
+    nav i {
+        display: none !important;
+    }
+}
+
+/*----------MAX : 1091-----------*/
+@media (max-width: 1091px) {
+    .nav-link {
+        font-size: 14px !important;
+    }
+}
+
+/*----------MAX : 1034-----------*/
+@media (max-width: 1034px) {
+    .nav-link {
+        font-size: 12px !important;
+    }
+}
+
 /*----------MAX : 1396-----------*/
 @media (max-width: 1396px) {
     .mainC i {
