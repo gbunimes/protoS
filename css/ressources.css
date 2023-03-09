@@ -1,4 +1,30 @@
 /***RESSOURCES***/
+
+#ressources section {
+	margin-bottom: 0 !important;
+}
+
+#ressources .secTit {
+	margin: auto auto 50px auto !important;
+	width: fit-content;
+}
+
+#ressources .toolTit {
+	width: fit-content;
+	padding: 2px 50px;
+	text-align: left;
+	font-size: 20px !important;
+}
+
+#ressources .argu {
+	padding: 50px !important;
+}
+
+#ressources .argu p {
+	max-width: 90%;
+	margin: auto;
+}
+
 #optimiser .container {
 	margin-top: -5px;
 	background: url("../img/bckg2.webp"), var(--light);
@@ -12,12 +38,14 @@
 	text-align: center;
 	margin: 15px auto 50px auto;
 }
+
 #optimiser p {
 	text-align: justify !important;
 	padding: 2px 50px;
 	color: black;
 	margin: 0;
 }
+
 .toolWrapper {
 	margin: 50px auto;
 	display: flex;
@@ -35,9 +63,11 @@
 	transform: scale(1);
 	transition: 0.4s;
 }
+
 .partA2 {
 	flex: 0.1;
 }
+
 .partB {
 	flex: 3;
 	background: url("../img/bckg2.webp"), var(--light);
@@ -48,6 +78,7 @@
 	flex-direction: column;
 	justify-content: center;
 }
+
 #optimiser button {
 	background: url("../img/bckg2.webp"), var(--primary);
 	width: 100% !important;
@@ -59,20 +90,37 @@
 	transition: 0.4s !important;
 	pointer-events: none !important;
 }
+
 .toolWrapper:nth-of-type(odd) {
 	flex-direction: row-reverse;
 }
+
 .toolWrapper:nth-of-type(odd) .partA,
 .toolWrapper:nth-of-type(odd) .partA button {
 	background: url("../img/bckg2.webp"), var(--secondary) !important;
 }
+
 .partA:hover,
 .partA:hover button {
 	transform: scale(1.05);
 	background: url("../img/bckg2.webp"), var(--secondary) !important;
 }
+
 .toolWrapper:nth-of-type(odd) .partA:hover,
 .toolWrapper:nth-of-type(odd) .partA:hover button {
 	transform: scale(1.05);
 	background: url("../img/bckg2.webp"), var(--primary) !important;
+}
+
+.toolWrapper:nth-of-type(odd) .partB .toolTit {
+	color: var(--primary) !important;
+	/*text align right*/
+}
+
+.realTool h1 {
+	font-size: 18px !important;
+	border-bottom: 1px solid var(--secondary) !important;
+	width: fit-content;
+	padding-bottom: 5px;
+	margin: auto;
 }
