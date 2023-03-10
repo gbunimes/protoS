@@ -9,8 +9,8 @@
 @import "./team.css";
 @import "./footer.css";
 @import "./anim.css";
-@import "./responsive.css";
 @import "./ressources.css";
+@import "z-responsive.css";
 
 /*Color Variables*/
 :root {

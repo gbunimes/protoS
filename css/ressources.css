@@ -131,7 +131,7 @@
 
 .toolWrapper:nth-of-type(odd) .partA,
 .toolWrapper:nth-of-type(odd) .partA button {
-	background: url("../img/bckg2.webp"), var(--secondary) !important;
+	background: url("../img/bckg2.webp"), var(--secondary) /* !important*/;
 }
 
 .partA:hover,
