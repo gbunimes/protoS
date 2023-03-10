@@ -184,30 +184,30 @@
 
     .toolWrapper .partA,
     .toolWrapper:nth-of-type(odd) .partA,
-    .toolWrapper:nth-of-type(odd)    
-    {
+    .toolWrapper:nth-of-type(odd) {
         background: none !important;
         box-shadow: unset !important;
     }
 
-    .toolWrapper .partB, .toolWrapper .partB p{
+    .toolWrapper .partB,
+    .toolWrapper .partB p {
         margin: auto;
-        padding: 5px!important;
+        padding: 5px !important;
     }
 
-    
+
     .toolWrapper:nth-of-type(odd) .partB .toolTit,
-    .toolTit{
-        text-align: center!important;
-        width: unset!important;
-        padding: 0!important;
-        align-self: center!important;
-        color: var(--secondary)!important;
+    .toolTit {
+        text-align: center !important;
+        width: unset !important;
+        padding: 0 !important;
+        align-self: center !important;
+        color: var(--secondary) !important;
 
     }
 
     .toolWrapper * button {
-                background: var(--primary)!important;
+        background: var(--primary) !important;
 
     }
 
