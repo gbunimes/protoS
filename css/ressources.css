@@ -5,8 +5,12 @@
 }
 
 #ressources .secTit {
-	margin: auto auto 50px auto !important;
+	margin: 40px auto 30px auto !important;
 	width: fit-content;
+}
+
+#ressources .secTit0 {
+	margin: 0px auto 30px auto !important;
 }
 
 #ressources .toolTit {
@@ -20,12 +24,42 @@
 	padding: 50px !important;
 }
 
+#ressources #top {
+	margin: 100px auto;
+	padding: 0;
+	min-height: unset !important;
+}
+
+#ressources #top .wow {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 0 !important;
+}
+
+#ressources .toolButton {
+	align-self: center;
+	max-width: 50%;
+}
+
+#ressources .toolButton2 {
+	align-self: center;
+	max-width: 50%;
+	margin: auto !important;
+}
+
 #ressources .argu p {
 	max-width: 90%;
 	margin: auto;
 }
 
-#optimiser .container {
+.contactW {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.toolSection .container {
 	margin-top: -5px;
 	background: url("../img/bckg2.webp"), var(--light);
 	background-position: center;
@@ -34,12 +68,12 @@
 	margin-bottom: 50px;
 }
 
-#optimiser .container h1 {
+.toolSection .container h1 {
 	text-align: center;
 	margin: 15px auto 50px auto;
 }
 
-#optimiser p {
+.toolSection p {
 	text-align: justify !important;
 	padding: 2px 50px;
 	color: black;
@@ -54,7 +88,7 @@
 
 .partA {
 	flex: 1;
-	padding: 3px;
+	padding: 5px;
 	background: var(--primary);
 	display: flex;
 	flex-direction: column;
@@ -69,17 +103,17 @@
 }
 
 .partB {
-	flex: 3;
+	flex: 4;
 	background: url("../img/bckg2.webp"), var(--light);
 	background-position: center;
 	background-size: cover;
-	padding: 15px;
+	/*padding: 15px;*/
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
 
-#optimiser button {
+.toolSection button {
 	background: url("../img/bckg2.webp"), var(--primary);
 	width: 100% !important;
 	padding: 10px 0 !important;
@@ -114,7 +148,7 @@
 
 .toolWrapper:nth-of-type(odd) .partB .toolTit {
 	color: var(--primary) !important;
-	/*text align right*/
+	align-self: flex-end;
 }
 
 .realTool h1 {

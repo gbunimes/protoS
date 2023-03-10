@@ -130,6 +130,7 @@
     font-size: 22px;
     background-color: var(--secondary);
     transition: 0.4s;
+    margin-bottom: 0 !important;
 }
 
 .toolButton:hover {
