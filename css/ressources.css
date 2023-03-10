@@ -13,6 +13,10 @@
 	margin: 0px auto 30px auto !important;
 }
 
+.toolSec .fa {
+	margin-right: 10px !important;
+}
+
 #ressources .toolTit {
 	width: fit-content;
 	padding: 2px 50px;
