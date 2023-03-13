@@ -1,0 +1,26 @@
+/***CONTACT***/
+
+.contactCont {
+    /*margin-top: -5px;*/
+    background: url("../img/bckg2.webp"), var(--light);
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    color: black;
+    /*
+    display: flex;
+    justify-content: center;
+    */
+}
+/*
+.contactCont2 {
+    flex-direction: column;
+}
+*/
+.aboutTitleCont {
+    color: var(--primary);
+}
+
+#thisIsContact .aboutTitle {
+    border: none !important;
+}
