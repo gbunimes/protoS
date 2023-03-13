@@ -6,7 +6,9 @@
 
 #ressources .secTit {
 	margin: 40px auto 30px auto !important;
-	width: fit-content;
+	/*width: fit-content;*/
+	max-width: 80%;
+	text-align: center;
 }
 
 #ressources .secTit0 {
@@ -161,4 +163,9 @@
 	width: fit-content;
 	padding-bottom: 5px;
 	margin: auto;
+}
+
+#accompagnement {
+	width: auto !important;
+	min-height: unset !important;
 }

@@ -29,22 +29,30 @@
     height: 100%;
 }
 
-.réalisations .row .card2:nth-of-type(1) .card5,
-.réalisations .row .card2:nth-of-type(4) .card5,
-.réalisations .row .card2:nth-of-type(6) .card5 {
-    background: url("../img/real.webp");
+.cibba {
+    background: url("../img/cibba.webp");
     background-position: center;
     background-size: cover;
 }
 
-.réalisations .row .card2:nth-of-type(2) .card5,
+.tbi {
+    background: url("../img/tbi.webp");
+    background-position: center;
+    background-size: cover;
+}
+
+.accomp {
+    background: url("../img/courses-3.webp");
+    background-position: center;
+    background-size: cover;
+}
+
 .réalisations .row .card2:nth-of-type(7) .card5 {
     background: url("../img/courses-3.webp");
     background-position: center;
     background-size: cover;
 }
 
-.réalisations .row .card2:nth-of-type(3) .card5,
 .réalisations .row .card2:nth-of-type(5) .card5 {
     background: url("../img/courses-4.webp");
     background-position: center;
@@ -56,5 +64,5 @@
 }
 
 .réalisations .courses-overlay p {
-    text-align: justify !important;
+    text-align: center !important;
 }
